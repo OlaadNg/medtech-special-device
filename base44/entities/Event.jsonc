@@ -1,0 +1,77 @@
+{
+  "name": "Event",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "Conference",
+        "Exhibition",
+        "Workshop",
+        "Webinar",
+        "Training",
+        "Healthcare Summit",
+        "Product Launch",
+        "Trade Show"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "is_virtual": {
+      "type": "boolean",
+      "default": false
+    },
+    "registration_url": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "max_attendees": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "ongoing",
+        "completed",
+        "cancelled"
+      ],
+      "default": "upcoming"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "event_type",
+    "start_date"
+  ]
+}

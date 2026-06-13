@@ -1,0 +1,56 @@
+{
+  "name": "Download",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Product Catalogue",
+        "Brochure",
+        "White Paper",
+        "Certificate",
+        "Technical Document",
+        "Training Manual",
+        "Installation Guide",
+        "Compliance Document"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "file_type": {
+      "type": "string"
+    },
+    "file_size": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "default": "English"
+    },
+    "product_category": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true
+    },
+    "download_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "category"
+  ]
+}

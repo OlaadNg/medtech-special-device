@@ -1,0 +1,94 @@
+{
+  "name": "CaseStudy",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "client_logo": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "Public Healthcare",
+        "Private Healthcare",
+        "Academic Healthcare",
+        "Military Healthcare",
+        "Specialist Care",
+        "Primary Healthcare",
+        "NGO"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "challenge": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "results": {
+      "type": "string"
+    },
+    "key_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "products_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "testimonial_quote": {
+      "type": "string"
+    },
+    "testimonial_author": {
+      "type": "string"
+    },
+    "testimonial_title": {
+      "type": "string"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published"
+      ],
+      "default": "draft"
+    }
+  },
+  "required": [
+    "title",
+    "client_name",
+    "industry"
+  ]
+}

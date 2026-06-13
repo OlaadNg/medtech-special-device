@@ -1,0 +1,111 @@
+{
+  "name": "QuoteRequest",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "job_title": {
+      "type": "string"
+    },
+    "organization_type": {
+      "type": "string",
+      "enum": [
+        "Public Hospital",
+        "Private Hospital",
+        "Clinic",
+        "Government Department",
+        "NGO",
+        "University",
+        "Research Institution",
+        "Distributor",
+        "Other"
+      ]
+    },
+    "products_interested": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "product_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "project_description": {
+      "type": "string"
+    },
+    "budget_range": {
+      "type": "string",
+      "enum": [
+        "Under R500K",
+        "R500K - R2M",
+        "R2M - R10M",
+        "R10M - R50M",
+        "Over R50M",
+        "Not Specified"
+      ]
+    },
+    "province": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "South Africa"
+    },
+    "timeline": {
+      "type": "string",
+      "enum": [
+        "Immediate (0-3 months)",
+        "Short-term (3-6 months)",
+        "Medium-term (6-12 months)",
+        "Long-term (12+ months)",
+        "Planning Phase"
+      ]
+    },
+    "additional_notes": {
+      "type": "string"
+    },
+    "attachment_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "in_review",
+        "quoted",
+        "won",
+        "lost",
+        "on_hold"
+      ],
+      "default": "new"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "internal_notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "first_name",
+    "last_name",
+    "email",
+    "organization"
+  ]
+}

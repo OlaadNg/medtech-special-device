@@ -62,11 +62,11 @@ module.exports = {
   			}
   		},
   		fontFamily: {
-  			heading: ['var(--font-heading)'],
-  			body: ['var(--font-body)'],
-  			display: ['var(--font-display)'],
-  			mono: ['var(--font-mono)']
-  		},
+  				heading: ['var(--font-heading)'],
+  				body: ['var(--font-body)'],
+  				display: ['var(--font-display)'],
+  				mono: ['var(--font-mono)']
+  			},
   		keyframes: {
   			'accordion-down': {
   				from: {

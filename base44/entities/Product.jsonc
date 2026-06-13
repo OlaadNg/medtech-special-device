@@ -1,0 +1,117 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "sku": {
+      "type": "string",
+      "description": "SKU/model number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Theatre Equipment",
+        "ICU Equipment",
+        "Emergency Equipment",
+        "Orthopaedic Devices",
+        "Diagnostic Equipment",
+        "Cardiology Equipment",
+        "Laboratory Equipment",
+        "Radiology Equipment",
+        "Digital Health Systems",
+        "CSSD Equipment",
+        "Oncology Equipment",
+        "General Ward Equipment",
+        "Maternal & Infant Care",
+        "Anaesthesia Systems"
+      ],
+      "description": "Product category"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "full_description": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "specifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "brochure_url": {
+      "type": "string"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "country_of_origin": {
+      "type": "string"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_new": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "discontinued",
+        "coming_soon"
+      ],
+      "default": "active"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}

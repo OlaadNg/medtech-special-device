@@ -1,0 +1,83 @@
+{
+  "name": "JobListing",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string",
+      "enum": [
+        "Clinical Engineering",
+        "Sales",
+        "Technical Support",
+        "Operations",
+        "Finance",
+        "Human Resources",
+        "Marketing",
+        "IT",
+        "Logistics",
+        "Management"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "employment_type": {
+      "type": "string",
+      "enum": [
+        "Full-time",
+        "Part-time",
+        "Contract",
+        "Internship",
+        "Graduate Programme"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "salary_range": {
+      "type": "string"
+    },
+    "closing_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed",
+        "filled"
+      ],
+      "default": "open"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "department",
+    "employment_type"
+  ]
+}

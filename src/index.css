@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,81 +7,64 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: 213 100% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 213 100% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
+    --popover-foreground: 213 100% 10%;
+    --primary: 210 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 25% 96%;
+    --secondary-foreground: 213 100% 10%;
+    --muted: 214 25% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 163 100% 32%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-    --font-heading: ui-sans-serif, system-ui, sans-serif;
-    --font-body: ui-sans-serif, system-ui, sans-serif;
-    --font-display: ui-sans-serif, system-ui, sans-serif;
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 163 100% 32%;
+    --radius: 0.75rem;
+    --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* MediHub Brand Colors */
+    --midnight-navy: #001A33;
+    --medihub-blue: #005BAA;
+    --sky-blue: #00A8E8;
+    --surgical-teal: #00A37B;
+    --vital-green: #00C896;
+    --clinical-mist: #F4F7FA;
+    --dark-footer: #002F5F;
+    --slate-text: #4A5568;
+    --light-border: #E8EDF3;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 213 100% 10%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: 213 60% 8%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
+    --popover: 213 60% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 40% 14%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 213 40% 14%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 163 100% 32%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 213 30% 18%;
+    --input: 213 30% 18%;
+    --ring: 163 100% 32%;
   }
 }
-
-
 
 @layer base {
   * {
@@ -88,5 +73,247 @@
 
   body {
     @apply bg-background text-foreground font-body;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-size: 14px;
+  }
+}
+
+@layer components {
+  /* Pulse Line - the core design motif */
+  .pulse-line-v {
+    @apply absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-200/40 to-transparent pointer-events-none;
+  }
+
+  .pulse-line-h {
+    @apply absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-200/40 to-transparent pointer-events-none;
+  }
+
+  /* Glassmorphism */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 91, 170, 0.08);
+  }
+
+  /* Navigation */
+  .nav-ghost {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-solid {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--light-border);
+    box-shadow: 0 1px 20px rgba(0, 27, 51, 0.08);
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 font-heading font-semibold text-white rounded-lg transition-all duration-300;
+    background: var(--medihub-blue);
+    min-height: 48px;
+    padding: 0 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .btn-primary:hover {
+    background: #004a8f;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 91, 170, 0.35);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--vital-green);
+    outline-offset: 3px;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 font-heading font-semibold rounded-lg transition-all duration-300;
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    min-height: 48px;
+    padding: 0 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: white;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary:focus-visible {
+    outline: 2px solid var(--vital-green);
+    outline-offset: 3px;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 font-heading font-semibold rounded-lg transition-all duration-300;
+    color: var(--medihub-blue);
+    border: 1.5px solid var(--medihub-blue);
+    min-height: 48px;
+    padding: 0 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .btn-outline:hover {
+    background: var(--medihub-blue);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 91, 170, 0.25);
+  }
+
+  .btn-outline:focus-visible {
+    outline: 2px solid var(--vital-green);
+    outline-offset: 3px;
+  }
+
+  /* Section containers */
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-10;
+  }
+
+  .section-mist {
+    background: var(--clinical-mist);
+  }
+
+  /* Section labels */
+  .section-label {
+    @apply inline-flex items-center gap-2 text-sm font-heading font-semibold uppercase tracking-widest;
+    color: var(--surgical-teal);
+  }
+
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: var(--surgical-teal);
+    border-radius: 2px;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 27, 51, 0.12);
+  }
+
+  /* Stats number */
+  .stat-number {
+    @apply font-heading font-black;
+    background: linear-gradient(135deg, var(--medihub-blue), var(--sky-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Divider gradient */
+  .divider-gradient {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--light-border), transparent);
+  }
+
+  /* Product card technical overlay */
+  .product-card .blueprint-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-card:hover .blueprint-overlay {
+    opacity: 1;
+  }
+
+  /* SKU text */
+  .sku-text {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--slate-text);
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clinical-mist);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--medihub-blue);
+  border-radius: 3px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus ring using vital green */
+*:focus-visible {
+  outline: 2px solid var(--vital-green);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #005BAA, #00A8E8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-teal {
+  background: linear-gradient(135deg, #00A37B, #00C896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    105deg,
+    rgba(0, 26, 51, 0.92) 0%,
+    rgba(0, 91, 170, 0.65) 50%,
+    rgba(0, 26, 51, 0.2) 100%
+  );
 }

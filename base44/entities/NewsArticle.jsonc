@@ -1,0 +1,73 @@
+{
+  "name": "NewsArticle",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Healthcare News",
+        "Medical Innovations",
+        "Industry Reports",
+        "Case Studies",
+        "Company News",
+        "Research Articles",
+        "White Papers",
+        "Events"
+      ]
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_title": {
+      "type": "string"
+    },
+    "author_photo": {
+      "type": "string"
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published",
+        "archived"
+      ],
+      "default": "draft"
+    },
+    "read_time_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "title",
+    "category"
+  ]
+}
