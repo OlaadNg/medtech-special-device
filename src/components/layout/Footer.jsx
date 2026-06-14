@@ -174,9 +174,14 @@ export default function Footer() {
         <div className="mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
           <p className="text-white/40 text-xs font-body">© {new Date().getFullYear()} MediHub Healthcare Solutions (Pty) Ltd. All rights reserved. Reg. No. 1989/012345/07</p>
           <div className="flex items-center gap-6 text-xs">
-            {['Privacy Policy', 'Terms & Conditions', 'Cookie Policy', 'POPIA Compliance'].map(item => (
-              <Link key={item} to={`/${item.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}`} className="text-white/40 hover:text-white/70 transition-colors">
-                {item}
+            {[
+              { label: 'Privacy Policy', path: '/privacy-policy' },
+              { label: 'Terms & Conditions', path: '/terms-and-conditions' },
+              { label: 'Cookie Policy', path: '/cookie-policy' },
+              { label: 'POPIA Compliance', path: '/popia-compliance' },
+            ].map(item => (
+              <Link key={item.label} to={item.path} className="text-white/40 hover:text-white/70 transition-colors">
+                {item.label}
               </Link>
             ))}
           </div>

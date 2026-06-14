@@ -27,6 +27,10 @@ import Quote from './pages/Quote';
 import ClientPortal from './pages/ClientPortal';
 import Events from './pages/Events';
 import CaseStudies from './pages/CaseStudies';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import CookiePolicy from './pages/CookiePolicy';
+import PoPIACompliance from './pages/PoPIACompliance';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -74,6 +78,10 @@ const AuthenticatedApp = () => {
         <Route path="/quote" element={<Quote />} />
         <Route path="/events" element={<Events />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/popia-compliance" element={<PoPIACompliance />} />
       </Route>
       <Route path="/client-portal" element={<ClientPortal />} />
       <Route path="*" element={<PageNotFound />} />
