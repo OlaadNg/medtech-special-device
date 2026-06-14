@@ -60,7 +60,7 @@ export default function Products() {
       <PageHero
         label="Product Catalogue"
         title="World-Class Medical Equipment for Every Department"
-        subtitle="Browse our comprehensive range of 10,000+ medical devices from 100+ global manufacturers — all backed by MediHub's clinical engineering support."
+        subtitle="Browse our comprehensive range of 10,000+ medical devices from 100+ global manufacturers — all backed by MedTech's clinical engineering support."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 

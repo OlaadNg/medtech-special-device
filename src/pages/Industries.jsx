@@ -64,7 +64,7 @@ export default function Industries() {
       <PageHero
         label="Industries We Serve"
         title="Specialised Solutions for Every Healthcare Sector"
-        subtitle="From national referral hospitals to remote primary care clinics — MediHub understands the unique demands of every healthcare environment."
+        subtitle="From national referral hospitals to remote primary care clinics — MedTech understands the unique demands of every healthcare environment."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 
@@ -100,7 +100,7 @@ export default function Industries() {
                     </Link>
                   </div>
                   <div>
-                    <img src={ind.image} alt={`MediHub ${ind.title} medical solutions and equipment`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '400px' }} />
+                    <img src={ind.image} alt={`MedTech ${ind.title} medical solutions and equipment`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '400px' }} />
                   </div>
                 </motion.div>
               );

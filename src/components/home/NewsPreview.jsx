@@ -25,8 +25,8 @@ const articles = [
   {
     id: 3,
     category: 'Company News',
-    title: 'MediHub Expands Operations Into East Africa With New Nairobi Regional Office',
-    excerpt: 'MediHub strengthens its pan-African footprint by establishing a full-service clinical engineering and distribution hub in Nairobi, Kenya.',
+    title: 'MedTech Expands Operations Into East Africa With New Nairobi Regional Office',
+    excerpt: 'MedTech strengthens its pan-African footprint by establishing a full-service clinical engineering and distribution hub in Nairobi, Kenya.',
     image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80&auto=format&fit=crop',
     date: 'May 28, 2026',
     readTime: '3 min read',

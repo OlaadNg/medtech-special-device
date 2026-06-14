@@ -74,7 +74,7 @@ export default function ClientPortal() {
               <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: 'var(--medihub-blue)' }}>
                 <svg viewBox="0 0 32 32" fill="none" className="w-4 h-4"><path d="M16 4v24M4 16h24" stroke="white" strokeWidth="3.5" strokeLinecap="round"/></svg>
               </div>
-              <span className="font-heading font-bold text-white text-sm">MediHub</span>
+              <span className="font-heading font-bold text-white text-sm">MedTech</span>
             </Link>
             <h1 className="font-heading font-black text-white text-xl">Client Portal</h1>
             <p className="text-white/50 text-sm font-body">Welcome back — Charlotte Maxeke Hospital</p>

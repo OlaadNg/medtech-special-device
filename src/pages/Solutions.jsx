@@ -79,7 +79,7 @@ export default function Solutions() {
       <PageHero
         label="Our Solutions"
         title="Tailored Healthcare Technology for Every Setting"
-        subtitle="Every healthcare environment is unique. MediHub designs sector-specific solutions that address your exact clinical, operational, and financial requirements."
+        subtitle="Every healthcare environment is unique. MedTech designs sector-specific solutions that address your exact clinical, operational, and financial requirements."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 
@@ -157,7 +157,7 @@ export default function Solutions() {
               </div>
 
               <div>
-                <img src={active.image} alt={`MediHub ${active.title} healthcare technology solutions`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '500px' }} />
+                <img src={active.image} alt={`MedTech ${active.title} healthcare technology solutions`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '500px' }} />
               </div>
             </motion.div>
           )}

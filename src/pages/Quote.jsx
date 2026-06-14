@@ -74,7 +74,7 @@ export default function Quote() {
           <p className="font-body text-sm mb-8" style={{ color: 'var(--slate-text)' }}>Expect to hear from us within <strong>2 business hours</strong>. A confirmation has been sent to <strong>{form.email}</strong>.</p>
           <div className="p-4 rounded-xl mb-6 text-left" style={{ background: 'var(--clinical-mist)' }}>
             <p className="text-xs font-mono mb-1" style={{ color: 'var(--slate-text)', fontFamily: 'var(--font-mono)' }}>REFERENCE NUMBER</p>
-            <p className="font-heading font-black text-lg" style={{ color: 'var(--medihub-blue)' }}>MH-{Date.now().toString().slice(-8)}</p>
+            <p className="font-heading font-black text-lg" style={{ color: 'var(--medihub-blue)' }}>MT-{Date.now().toString().slice(-8)}</p>
           </div>
           <a href="/" className="btn-primary">Return to Homepage</a>
         </motion.div>

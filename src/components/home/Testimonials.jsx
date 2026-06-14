@@ -4,28 +4,28 @@ import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "MediHub transformed our ICU capabilities. Their end-to-end approach — from equipment selection through installation and ongoing support — is unmatched in South Africa. We've seen measurable improvements in patient outcomes.",
+    quote: "MedTech transformed our ICU capabilities. Their end-to-end approach — from equipment selection through installation and ongoing support — is unmatched in South Africa. We've seen measurable improvements in patient outcomes.",
     name: 'Dr. Sarah Mokoena',
     title: 'Head of Critical Care, Charlotte Maxeke Hospital',
     institution: 'Charlotte Maxeke Academic Hospital, Johannesburg',
     rating: 5,
   },
   {
-    quote: "The clinical engineering team from MediHub is exceptional. Their 24/7 response capability and technical expertise ensure our theatre equipment is always available. In a high-pressure surgical environment, you cannot afford downtime.",
+    quote: "The clinical engineering team from MedTech is exceptional. Their 24/7 response capability and technical expertise ensure our theatre equipment is always available. In a high-pressure surgical environment, you cannot afford downtime.",
     name: 'Prof. Emmanuel Nkosi',
     title: 'Chief Surgeon, Groote Schuur Hospital',
     institution: 'Groote Schuur Academic Hospital, Cape Town',
     rating: 5,
   },
   {
-    quote: "As a hospital administrator, I rely on suppliers who understand both the clinical and procurement landscape. MediHub delivers consistently high-quality equipment with full regulatory compliance and competitive pricing for public facilities.",
+    quote: "As a hospital administrator, I rely on suppliers who understand both the clinical and procurement landscape. MedTech delivers consistently high-quality equipment with full regulatory compliance and competitive pricing for public facilities.",
     name: 'Mr. Thabo Dlamini',
     title: 'CEO, KwaZulu-Natal Regional Health Authority',
     institution: 'KZN Department of Health',
     rating: 5,
   },
   {
-    quote: "MediHub's digital health division helped us implement a fully integrated EMR and telemedicine platform across our three Mozambique clinics. The local language support and training was outstanding.",
+    quote: "MedTech's digital health division helped us implement a fully integrated EMR and telemedicine platform across our three Mozambique clinics. The local language support and training was outstanding.",
     name: 'Dr. Amina Hassan',
     title: 'Medical Director, Africa Health Network',
     institution: 'Africa Health Network, Mozambique',

@@ -116,7 +116,7 @@ export default function CareDivisions() {
               Comprehensive Solutions<br />Across All Care Settings
             </h2>
             <p className="max-w-2xl mx-auto font-body text-lg" style={{ color: 'var(--slate-text)' }}>
-              From emergency response to complex theatre environments — MediHub delivers complete, integrated solutions for every care division in your facility.
+              From emergency response to complex theatre environments — MedTech delivers complete, integrated solutions for every care division in your facility.
             </p>
           </motion.div>
         </div>

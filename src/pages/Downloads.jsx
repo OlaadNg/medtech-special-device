@@ -4,10 +4,10 @@ import { FileText, Download, Search, Filter } from 'lucide-react';
 import PageHero from '../components/shared/PageHero';
 
 const downloads = [
-  { id: 1, title: 'MediHub Product Catalogue 2026', category: 'Product Catalogue', description: 'Full catalogue of all MediHub products across all care divisions.', size: '24.6 MB', type: 'PDF', updated: '2026-01-15', downloads: 1247 },
+  { id: 1, title: 'MedTech Product Catalogue 2026', category: 'Product Catalogue', description: 'Full catalogue of all MedTech products across all care divisions.', size: '24.6 MB', type: 'PDF', updated: '2026-01-15', downloads: 1247 },
   { id: 2, title: 'ICU Solutions Brochure', category: 'Brochure', description: 'Comprehensive guide to our ICU and critical care product range.', size: '8.2 MB', type: 'PDF', updated: '2026-03-10', downloads: 836 },
   { id: 3, title: 'Theatre Equipment Overview', category: 'Brochure', description: 'Complete theatre solutions including surgical lights, tables, and anaesthesia.', size: '6.1 MB', type: 'PDF', updated: '2026-02-20', downloads: 621 },
-  { id: 4, title: 'ISO 13485:2016 Certificate', category: 'Certificate', description: 'MediHub quality management system certification for medical device distribution.', size: '1.1 MB', type: 'PDF', updated: '2025-11-01', downloads: 428 },
+  { id: 4, title: 'ISO 13485:2016 Certificate', category: 'Certificate', description: 'MedTech quality management system certification for medical device distribution.', size: '1.1 MB', type: 'PDF', updated: '2025-11-01', downloads: 428 },
   { id: 5, title: 'Digital Healthcare White Paper 2026', category: 'White Paper', description: 'Analysis of digital health transformation trends in African healthcare.', size: '3.4 MB', type: 'PDF', updated: '2026-04-05', downloads: 512 },
   { id: 6, title: 'Service Level Agreement Template', category: 'Technical Document', description: 'Standard SLA template for clinical engineering service contracts.', size: '0.8 MB', type: 'PDF', updated: '2026-01-01', downloads: 319 },
   { id: 7, title: 'BBBEE Certificate Level 2', category: 'Certificate', description: 'Broad-Based Black Economic Empowerment verification certificate.', size: '0.6 MB', type: 'PDF', updated: '2025-08-15', downloads: 892 },

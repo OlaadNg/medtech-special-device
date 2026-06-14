@@ -62,7 +62,7 @@ export default function Partners() {
       <PageHero
         label="Our Partners"
         title="Backed by the World's Most Trusted Manufacturers"
-        subtitle="MediHub is the authorised distributor and service partner for 100+ leading global medical equipment manufacturers — ensuring genuine products, full warranty, and manufacturer support."
+        subtitle="MedTech is the authorised distributor and service partner for 100+ leading global medical equipment manufacturers — ensuring genuine products, full warranty, and manufacturer support."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 
@@ -105,7 +105,7 @@ export default function Partners() {
       {/* Become a partner CTA */}
       <section className="py-20" style={{ background: 'var(--midnight-navy)' }}>
         <div className="section-container text-center max-w-2xl mx-auto">
-          <h2 className="font-heading font-black text-3xl text-white mb-4">Become a MediHub Partner</h2>
+          <h2 className="font-heading font-black text-3xl text-white mb-4">Become a MedTech Partner</h2>
           <p className="font-body text-white/60 mb-8">Join our network of African distribution and service partners. We provide full training, marketing support, and technical resources.</p>
           <Link to="/contact" className="btn-primary">
             Apply for Partnership <ArrowRight size={16} />

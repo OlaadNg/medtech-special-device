@@ -9,7 +9,7 @@ const offices = [
     city: 'Johannesburg (HQ)',
     address: '123 Healthcare Drive, Sandton, Johannesburg, 2196',
     phone: '+27 11 234 5678',
-    email: 'jhb@medihub.co.za',
+    email: 'info@medtechspecialdevice.com',
     hours: 'Mon–Fri: 08:00–17:00',
     isHQ: true,
   },
@@ -17,21 +17,21 @@ const offices = [
     city: 'Cape Town',
     address: '45 Medical Quarter, Century City, Cape Town, 7441',
     phone: '+27 21 567 8901',
-    email: 'cpt@medihub.co.za',
+    email: 'info@medtechspecialdevice.com',
     hours: 'Mon–Fri: 08:00–17:00',
   },
   {
     city: 'Durban',
     address: '78 Health Hub, Umhlanga Ridge, Durban, 4320',
     phone: '+27 31 456 7890',
-    email: 'dbn@medihub.co.za',
+    email: 'info@medtechspecialdevice.com',
     hours: 'Mon–Fri: 08:00–17:00',
   },
   {
     city: 'Pretoria',
     address: '22 MedPark Boulevard, Centurion, Pretoria, 0157',
     phone: '+27 12 345 6789',
-    email: 'pta@medihub.co.za',
+    email: 'info@medtechspecialdevice.com',
     hours: 'Mon–Fri: 08:00–17:00',
   },
 ];
@@ -171,13 +171,13 @@ export default function Contact() {
                       <p className="font-heading font-semibold text-sm group-hover:text-medihub-blue transition-colors" style={{ color: 'var(--midnight-navy)' }}>+27 11 234 5678</p>
                     </div>
                   </a>
-                  <a href="mailto:info@medihub.co.za" className="flex items-center gap-3 group">
+                  <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-3 group">
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--clinical-mist)' }}>
                       <Mail size={16} style={{ color: 'var(--medihub-blue)' }} />
                     </div>
                     <div>
                       <p className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>Email Us</p>
-                      <p className="font-heading font-semibold text-sm group-hover:text-medihub-blue transition-colors" style={{ color: 'var(--midnight-navy)' }}>info@medihub.co.za</p>
+                      <p className="font-heading font-semibold text-sm group-hover:text-medihub-blue transition-colors" style={{ color: 'var(--midnight-navy)' }}>info@medtechspecialdevice.com</p>
                     </div>
                   </a>
                   <div className="flex items-center gap-3">

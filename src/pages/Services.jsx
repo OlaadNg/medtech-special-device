@@ -70,7 +70,7 @@ const services = [
     icon: GraduationCap,
     title: 'Training Services',
     color: '#6B46C1',
-    summary: 'Comprehensive training programmes for clinical staff, biomedical engineers, and technical teams — ensuring safe and effective use of all MediHub-supplied equipment.',
+    summary: 'Comprehensive training programmes for clinical staff, biomedical engineers, and technical teams — ensuring safe and effective use of all MedTech-supplied equipment.',
     offerings: [
       'Clinical User Training (Nurses & Doctors)',
       'Biomedical Engineer Technical Training',
@@ -105,7 +105,7 @@ export default function Services() {
       <PageHero
         label="Our Services"
         title="Complete Lifecycle Support for Your Medical Equipment"
-        subtitle="From installation and training to 24/7 maintenance and emergency response — MediHub supports your technology through its entire lifecycle."
+        subtitle="From installation and training to 24/7 maintenance and emergency response — MedTech supports your technology through its entire lifecycle."
         image="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1920&q=80"
       />
 
@@ -144,7 +144,7 @@ export default function Services() {
                   </Link>
                 </div>
                 <div className={isEven ? '' : 'lg:order-1'}>
-                  <img src={service.image} alt={`MediHub ${service.title} professionals in a hospital environment`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '440px' }} />
+                  <img src={service.image} alt={`MedTech ${service.title} professionals in a hospital environment`} className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '440px' }} />
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ const jobs = [
   { id: 1, title: 'Senior Clinical Engineer', department: 'Clinical Engineering', location: 'Johannesburg', type: 'Full-time', closing: '2026-07-31', description: 'Lead biomedical engineering services for a portfolio of major hospital accounts. Factory-trained on Philips and Siemens equipment.', requirements: ['BSc/BEng Biomedical Engineering or equivalent', 'Minimum 5 years clinical engineering experience', 'Factory training from major manufacturer', 'Valid driver\'s licence', 'Knowledge of SHEQ systems'] },
   { id: 2, title: 'ICU / Critical Care Solutions Specialist', department: 'Sales', location: 'Cape Town', type: 'Full-time', closing: '2026-07-15', description: 'Drive sales of ICU and critical care equipment to hospitals and clinics in the Western Cape. Clinical background advantageous.', requirements: ['3+ years medical device sales experience', 'Clinical background (ICU nursing/paramedic) preferred', 'Strong presentation and negotiation skills', 'Existing hospital network'] },
   { id: 3, title: 'Digital Health Implementation Consultant', department: 'Digital Healthcare', location: 'Johannesburg', type: 'Full-time', closing: '2026-07-20', description: 'Manage implementation of EMR and hospital information systems across South African health facilities.', requirements: ['IT degree or Health Informatics qualification', '3+ years HIS/EMR implementation experience', 'Experience with Cerner or similar systems', 'Healthcare industry knowledge'] },
-  { id: 4, title: 'Africa Operations Manager — East Africa', department: 'Operations', location: 'Nairobi, Kenya', type: 'Full-time', closing: '2026-08-15', description: 'Establish and grow MediHub operations in East Africa, managing distribution partners and clinical engineering teams across Kenya, Uganda, and Tanzania.', requirements: ['10+ years in African healthcare industry', 'Proven business development in East Africa', 'Fluent in Swahili and English', 'Medical device industry experience'] },
+  { id: 4, title: 'Africa Operations Manager — East Africa', department: 'Operations', location: 'Nairobi, Kenya', type: 'Full-time', closing: '2026-08-15', description: 'Establish and grow MedTech operations in East Africa, managing distribution partners and clinical engineering teams across Kenya, Uganda, and Tanzania.', requirements: ['10+ years in African healthcare industry', 'Proven business development in East Africa', 'Fluent in Swahili and English', 'Medical device industry experience'] },
   { id: 5, title: 'Graduate — Biomedical Engineering Programme', department: 'Clinical Engineering', location: 'Johannesburg / Cape Town', type: 'Graduate Programme', closing: '2026-07-01', description: '24-month structured graduate programme with rotations across clinical engineering, sales, and operations. Full factory training provided.', requirements: ['Recent BEng Biomedical Engineering graduate', 'Minimum 65% aggregate', 'South African citizen', 'Driver\'s licence'] },
   { id: 6, title: 'Theatre Solutions Clinical Trainer', department: 'Sales', location: 'Pretoria', type: 'Full-time', closing: '2026-07-30', description: 'Provide clinical and technical training to theatre staff across hospital clients. Specialise in surgical lights, tables, and laparoscopic equipment.', requirements: ['Registered Nurse (Theatre) or equivalent', '3+ years scrub nurse experience', 'Medical device training experience preferred', 'Excellent communication skills'] },
 ];
@@ -31,7 +31,7 @@ export default function Careers() {
   return (
     <div>
       <PageHero
-        label="Careers at MediHub"
+        label="Careers at MedTech"
         title="Shape the Future of African Healthcare"
         subtitle="Join a team of 600+ passionate professionals dedicated to advancing healthcare technology across Africa. We invest in people who care about making a difference."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
@@ -42,10 +42,10 @@ export default function Careers() {
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
-              <span className="section-label mb-4">Life at MediHub</span>
+              <span className="section-label mb-4">Life at MedTech</span>
               <h2 className="font-heading font-black text-3xl lg:text-4xl mt-4 mb-5" style={{ color: 'var(--midnight-navy)' }}>Where Expertise Meets Impact</h2>
               <p className="font-body text-lg leading-relaxed mb-8" style={{ color: 'var(--slate-text)' }}>
-                At MediHub, every team member contributes directly to the quality of healthcare across Africa. Whether you are a clinical engineer maintaining life-saving equipment or a sales specialist connecting hospitals with the technology they need — your work matters.
+                At MedTech, every team member contributes directly to the quality of healthcare across Africa. Whether you are a clinical engineer maintaining life-saving equipment or a sales specialist connecting hospitals with the technology they need — your work matters.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {benefits.map(b => {
@@ -61,7 +61,7 @@ export default function Careers() {
               </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop" alt="MediHub team collaborating in a modern workspace" className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '460px' }} />
+              <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop" alt="MedTech team collaborating in a modern workspace" className="rounded-3xl shadow-xl w-full object-cover" style={{ height: '460px' }} />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Careers() {
                         </li>
                       ))}
                     </ul>
-                    <a href={`mailto:careers@medihub.co.za?subject=Application: ${job.title}`} className="btn-primary" style={{ minHeight: '48px', padding: '0 24px', fontSize: '14px' }}>
+                    <a href={`mailto:info@medtechspecialdevice.com?subject=Application: ${job.title}`} className="btn-primary" style={{ minHeight: '48px', padding: '0 24px', fontSize: '14px' }}>
                       Apply for This Role <ArrowRight size={15} />
                     </a>
                   </motion.div>

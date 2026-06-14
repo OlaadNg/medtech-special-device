@@ -24,7 +24,7 @@ export default function HomeCTA() {
         >
           <span className="text-xs font-heading uppercase tracking-widest text-white/60 mb-4 block">Ready to Transform Your Facility?</span>
           <h2 className="font-heading font-black text-white mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3.25rem)', letterSpacing: '-0.02em' }}>
-            Partner With Africa's Trusted Medical Technology Provider
+            Partner With MedTech Special Device
           </h2>
           <p className="text-white/75 font-body text-lg mb-10 max-w-xl mx-auto">
             Let our healthcare solutions experts design a tailored technology roadmap for your facility — from consultation through implementation.

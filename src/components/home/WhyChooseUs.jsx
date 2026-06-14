@@ -62,9 +62,9 @@ export default function WhyChooseUs() {
       <div className="section-container">
         <div ref={ref} className="max-w-3xl mb-16">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
-            <span className="section-label mb-4">Why MediHub</span>
+            <span className="section-label mb-4">Why MedTech</span>
             <h2 className="font-heading font-black text-4xl lg:text-5xl mt-4 mb-5" style={{ color: 'var(--midnight-navy)' }}>
-              Africa's Most Trusted<br />Medical Technology Partner
+              Your Trusted Wholesale<br />Surgical Device Supplier
             </h2>
             <p className="font-body text-lg" style={{ color: 'var(--slate-text)' }}>
               We go beyond supply — we build long-term partnerships with healthcare institutions to ensure technology performs at its highest level, every day.
