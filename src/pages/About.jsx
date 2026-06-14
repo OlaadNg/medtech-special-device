@@ -4,7 +4,7 @@ import { CheckCircle2, Award, Globe, Users, Target, Eye, Heart } from 'lucide-re
 import PageHero from '../components/shared/PageHero';
 
 const timeline = [
-  { year: '1989', title: 'MediHub Founded', desc: 'Established in Johannesburg with a focus on surgical equipment supply to private hospitals.' },
+  { year: '2000', title: 'MedTech Founded', desc: 'Established as a wholesale liquidator of disposable surgical devices and sutures from top global brands.' },
   { year: '1996', title: 'ISO 13485 Certification', desc: 'Achieved international quality management certification for medical device distribution.' },
   { year: '2001', title: 'Government Contracts', desc: 'First major Department of Health tender for ICU equipment across 12 public hospitals.' },
   { year: '2006', title: 'Pan-African Expansion', desc: 'Opened regional offices in Nairobi, Lagos, and Lusaka, serving 8 African countries.' },
@@ -26,14 +26,14 @@ const team = [
   {
     name: 'Ms. Nokuthula Zulu',
     role: 'Chief Operating Officer',
-    bio: 'MBA Wits Business School. Led MediHub\'s expansion into 8 new African markets. Healthcare supply chain specialist.',
+    bio: "MBA Wits Business School. Led MedTech's expansion into new markets. Healthcare supply chain specialist.",
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&auto=format&fit=crop',
     department: 'Executive',
   },
   {
     name: 'Mr. Riaan Pretorius',
     role: 'Chief Technical Officer',
-    bio: 'Biomedical Engineer with Dräger and GE Healthcare experience. Leads our 150-engineer clinical engineering division.',
+    bio: 'Biomedical Engineer with experience at leading global medical device companies. Leads our technical and engineering division.',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80&auto=format&fit=crop',
     department: 'Technical',
   },
@@ -91,9 +91,9 @@ export default function About() {
   return (
     <div>
       <PageHero
-        label="About MediHub"
-        title="Africa's Medical Technology Partner Since 1989"
-        subtitle="For over 35 years, MediHub has been the trusted bridge between world-leading medical technology manufacturers and healthcare institutions across Africa."
+        label="About MedTech Special Device"
+        title="Your Trusted Wholesale Surgical Device Partner Since 2000"
+        subtitle="A proud member of the surgical device community since 2000 — supplying brand-name surgical disposables at discounted prices, with no contracts and no minimum orders."
         image="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1920&q=90&auto=format&fit=crop"
       />
 
@@ -104,36 +104,50 @@ export default function About() {
             <div>
               <span className="section-label mb-4">Our Story</span>
               <h2 className="font-heading font-black text-4xl lg:text-5xl mt-4 mb-6" style={{ color: 'var(--midnight-navy)' }}>
-                Born From a Vision to Transform African Healthcare
+                Who We Are
               </h2>
               <p className="font-body text-lg leading-relaxed mb-5" style={{ color: 'var(--slate-text)' }}>
-                MediHub was founded in 1989 by Dr. Willem van der Berg, a biomedical engineer who recognised that South African hospitals were being underserved by international suppliers who lacked local expertise and commitment.
+                MedTech Special Device is a wholesale liquidator of disposable surgical devices and sutures from top brands such as <strong>Arthrex, Bard, Medtronic, Stryker</strong>, and many more. A proud member of the surgical device community since 2000, we specialise in selling brand-name surgical devices at discounted prices — in quantities you decide. <strong>No contracts, no minimum orders.</strong>
               </p>
               <p className="font-body leading-relaxed mb-5" style={{ color: 'var(--slate-text)' }}>
-                What began as a three-person operation supplying surgical instruments to Johannesburg hospitals has grown into South Africa's most comprehensive medical technology platform — serving 500+ healthcare facilities across 15 African countries with a team of 600+ professionals.
+                In order to better serve the medical community, in 2023, MedTech Special Device launched our own premium brand of sutures, skin staplers, and exam gloves. This enables us to provide lower-cost &amp; higher-quality surgical disposables while maintaining the speed and efficiency you've come to expect.
+              </p>
+              <p className="font-body leading-relaxed mb-5" style={{ color: 'var(--slate-text)' }}>
+                When you call MedTech Special Device, you're not just speaking to an order taker — you are speaking to a Customer Service Representative who can help you find the products you use quickly and easily. No guesswork, no delays. We know your time is valuable.
               </p>
               <p className="font-body leading-relaxed mb-8" style={{ color: 'var(--slate-text)' }}>
-                Today, MediHub delivers complete solutions across every care division — from theatre and ICU to digital health and clinical engineering — backed by factory-trained engineers and 24/7 support infrastructure.
+                We stock over <strong>160,000 items</strong> from over <strong>150 leading manufacturers</strong>. Orders placed by <strong>5:00 PM CST ship the same day</strong>. Overnight shipping is available.
               </p>
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { icon: Target, label: 'Mission', text: 'To advance African healthcare by delivering world-class medical technology solutions with uncompromising quality and service.' },
-                  { icon: Eye, label: 'Vision', text: 'To be the most trusted and impactful medical technology partner across the African continent.' },
-                ].map(({ icon: Icon, label, text }) => (
-                  <div key={label} className="p-5 rounded-2xl border" style={{ borderColor: 'var(--light-border)' }}>
-                    <div className="flex items-center gap-2 mb-3">
-                      <Icon size={18} style={{ color: 'var(--medihub-blue)' }} />
-                      <span className="font-heading font-bold text-sm" style={{ color: 'var(--midnight-navy)' }}>{label}</span>
-                    </div>
-                    <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--slate-text)' }}>{text}</p>
+
+              {/* Contact & Warehouses */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="p-5 rounded-2xl border" style={{ borderColor: 'var(--light-border)' }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Target size={18} style={{ color: 'var(--medihub-blue)' }} />
+                    <span className="font-heading font-bold text-sm" style={{ color: 'var(--midnight-navy)' }}>Contact Us</span>
                   </div>
-                ))}
+                  <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--slate-text)' }}>
+                    Contact us by <strong>email only</strong>.<br />
+                    <a href="mailto:info@medtechspecialdevice.com" className="underline" style={{ color: 'var(--medihub-blue)' }}>info@medtechspecialdevice.com</a>
+                  </p>
+                </div>
+                <div className="p-5 rounded-2xl border" style={{ borderColor: 'var(--light-border)' }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Globe size={18} style={{ color: 'var(--medihub-blue)' }} />
+                    <span className="font-heading font-bold text-sm" style={{ color: 'var(--midnight-navy)' }}>Our Warehouses</span>
+                  </div>
+                  <ul className="font-body text-sm space-y-1" style={{ color: 'var(--slate-text)' }}>
+                    <li>🇨🇳 <strong>China</strong> — China Warehouse</li>
+                    <li>🇺🇸 <strong>United States</strong> — US Warehouse</li>
+                    <li>🇿🇦 <strong>South Africa</strong> — SA Warehouse</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?w=800&q=80&auto=format&fit=crop"
-                alt="MediHub medical technology team working in a modern hospital environment"
+                alt="MedTech Special Device team working in a modern medical environment"
                 className="rounded-3xl shadow-2xl w-full object-cover"
                 style={{ height: '520px' }}
               />
@@ -143,7 +157,7 @@ export default function About() {
                     <Award size={22} className="text-white" />
                   </div>
                   <div>
-                    <p className="font-heading font-black text-xl" style={{ color: 'var(--midnight-navy)' }}>35+ Years</p>
+                    <p className="font-heading font-black text-xl" style={{ color: 'var(--midnight-navy)' }}>25+ Years</p>
                     <p className="font-body text-sm" style={{ color: 'var(--slate-text)' }}>Industry Excellence</p>
                   </div>
                 </div>
@@ -183,7 +197,7 @@ export default function About() {
         <div className="section-container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={timelineInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-14">
             <span className="section-label mb-4">Company Timeline</span>
-            <h2 className="font-heading font-black text-4xl mt-4" style={{ color: 'var(--midnight-navy)' }}>35 Years of Milestones</h2>
+            <h2 className="font-heading font-black text-4xl mt-4" style={{ color: 'var(--midnight-navy)' }}>25 Years of Milestones</h2>
           </motion.div>
           <div className="relative max-w-3xl mx-auto">
             <div className="absolute left-8 top-0 bottom-0 w-px" style={{ background: 'linear-gradient(180deg, var(--medihub-blue), var(--surgical-teal))' }} />
@@ -218,7 +232,7 @@ export default function About() {
               <motion.div key={member.name} initial={{ opacity: 0, y: 30 }} animate={teamInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="bg-white rounded-2xl overflow-hidden border card-hover" style={{ borderColor: 'var(--light-border)' }}>
                 <div className="h-56 overflow-hidden">
-                  <img src={member.image} alt={`${member.name}, ${member.role} at MediHub`} className="w-full h-full object-cover object-top" />
+                  <img src={member.image} alt={`${member.name}, ${member.role} at MedTech`} className="w-full h-full object-cover object-top" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading font-bold text-lg mb-0.5" style={{ color: 'var(--midnight-navy)' }}>{member.name}</h3>

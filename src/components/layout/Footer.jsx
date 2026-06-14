@@ -28,7 +28,7 @@ const footerLinks = {
     { label: 'Emergency Response', path: '/contact' },
   ],
   'Company': [
-    { label: 'About MediHub', path: '/about' },
+    { label: 'About MedTech', path: '/about' },
     { label: 'Leadership Team', path: '/about#team' },
     { label: 'Partners', path: '/partners' },
     { label: 'Careers', path: '/careers' },
@@ -55,8 +55,8 @@ export default function Footer() {
       <div style={{ background: 'var(--medihub-blue)' }}>
         <div className="section-container py-12 flex flex-col lg:flex-row items-center justify-between gap-6">
           <div>
-            <h3 className="font-heading font-bold text-white text-2xl lg:text-3xl">Partner With Africa's Trusted Medical Technology Provider</h3>
-            <p className="text-white/70 mt-2 font-body">Join 500+ healthcare facilities that trust MediHub for their medical technology needs.</p>
+            <h3 className="font-heading font-bold text-white text-2xl lg:text-3xl">Ready to Order Surgical Devices at Discounted Prices?</h3>
+            <p className="text-white/70 mt-2 font-body">160,000+ items from 150+ manufacturers. No contracts, no minimum orders. Same-day shipping.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link to="/contact" className="btn-secondary">Request Consultation</Link>
@@ -80,25 +80,25 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <span className="font-heading font-black text-xl text-white">MediHub</span>
-                <div className="text-white/40 font-body" style={{ fontSize: '10px', letterSpacing: '0.12em' }}>HEALTHCARE SOLUTIONS</div>
+                <span className="font-heading font-black text-xl text-white">MedTech</span>
+                <div className="text-white/40 font-body" style={{ fontSize: '10px', letterSpacing: '0.12em' }}>SPECIAL DEVICE</div>
               </div>
             </Link>
             <p className="text-white/60 font-body text-sm leading-relaxed mb-6">
-              South Africa's leading medical equipment, healthcare technology, and hospital solutions provider. Delivering world-class medical technology across Africa since 1989.
+              Wholesale liquidator of disposable surgical devices and sutures from top brands. Serving the surgical device community since 2000 — no contracts, no minimum orders.
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3 text-white/60">
                 <MapPin size={15} className="mt-0.5 flex-shrink-0 text-sky-400" />
-                <span>123 Healthcare Drive, Sandton<br />Johannesburg, 2196, South Africa</span>
+                <span>🇨🇳 China Warehouse &nbsp;|&nbsp; 🇺🇸 US Warehouse<br />🇿🇦 South Africa Warehouse</span>
               </div>
-              <a href="tel:+27112345678" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
-                <Phone size={15} className="flex-shrink-0 text-sky-400" />
-                <span>+27 11 234 5678</span>
-              </a>
-              <a href="mailto:info@medihub.co.za" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+              <div className="flex items-center gap-3 text-white/60">
                 <Mail size={15} className="flex-shrink-0 text-sky-400" />
-                <span>info@medihub.co.za</span>
+                <span>Contact us by email only</span>
+              </div>
+              <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+                <Mail size={15} className="flex-shrink-0 text-sky-400" />
+                <span>info@medtechspecialdevice.com</span>
               </a>
             </div>
             <div className="flex items-center gap-3 mt-6">
@@ -172,7 +172,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
-          <p className="text-white/40 text-xs font-body">© {new Date().getFullYear()} MediHub Healthcare Solutions (Pty) Ltd. All rights reserved. Reg. No. 1989/012345/07</p>
+          <p className="text-white/40 text-xs font-body">© {new Date().getFullYear()} MedTech Special Device. All rights reserved.</p>
           <div className="flex items-center gap-6 text-xs">
             {[
               { label: 'Privacy Policy', path: '/privacy-policy' },

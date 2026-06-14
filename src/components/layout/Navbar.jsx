@@ -83,15 +83,15 @@ export default function Navbar() {
       {/* Top info bar */}
       <div className={`hidden lg:block text-xs transition-all duration-300 ${isTransparent ? 'bg-midnight-navy/80' : 'bg-medihub-blue'} text-white/80`}>
         <div className="section-container flex justify-between items-center py-2">
-          <span className="font-body">Africa's Trusted Medical Technology Partner — Serving 15+ Countries</span>
+          <span className="font-body">Wholesale Surgical Device Liquidator — 160,000+ Items, Ships Same Day</span>
           <div className="flex items-center gap-6">
             <a href="tel:+27112345678" className="flex items-center gap-1.5 hover:text-white transition-colors">
               <Phone size={12} />
               <span>+27 11 234 5678</span>
             </a>
-            <a href="mailto:info@medihub.co.za" className="flex items-center gap-1.5 hover:text-white transition-colors">
+            <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-1.5 hover:text-white transition-colors">
               <Mail size={12} />
-              <span>info@medihub.co.za</span>
+              <span>info@medtechspecialdevice.com</span>
             </a>
           </div>
         </div>
@@ -112,10 +112,10 @@ export default function Navbar() {
               <div>
                 <span className={`font-heading font-black text-xl tracking-tight ${isTransparent ? 'text-white' : 'text-midnight-navy'}`}
                   style={{ color: isTransparent ? 'white' : 'var(--midnight-navy)' }}>
-                  Medi<span style={{ color: 'var(--medihub-blue)' }}>{isTransparent ? '' : ''}</span>Hub
+                  MedTech
                 </span>
                 <div className={`text-xs font-body leading-none ${isTransparent ? 'text-white/60' : 'text-slate-400'}`} style={{ fontSize: '10px', letterSpacing: '0.12em' }}>
-                  HEALTHCARE SOLUTIONS
+                  SPECIAL DEVICE
                 </div>
               </div>
             </div>
