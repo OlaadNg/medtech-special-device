@@ -131,9 +131,9 @@ export default function HeroSection() {
               className="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/15"
             >
               {[
-                { value: '35+', label: 'Years Experience' },
+                { value: '25+', label: 'Years Experience' },
                 { value: '500+', label: 'Facilities Served' },
-                { value: '15+', label: 'African Countries' },
+                { value: '15+', label: 'Countries Worldwide' },
                 { value: '24/7', label: 'Technical Support' },
               ].map(stat => (
                 <div key={stat.label}>

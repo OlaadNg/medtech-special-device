@@ -12,13 +12,13 @@ const reasons = [
   {
     icon: Award,
     title: 'Industry Expertise',
-    description: 'Over 35 years serving African healthcare. Our team brings deep clinical and technical knowledge across all care divisions.',
-    metric: '35+ Years Experience',
+    description: 'Over 25 years serving the global surgical device community. Our team brings deep clinical and technical knowledge across all care divisions.',
+    metric: '25+ Years Experience',
   },
   {
     icon: Globe,
-    title: 'Pan-African Network',
-    description: 'Active operations in 15+ African countries with established distribution networks, regional offices, and local service teams.',
+    title: 'Global Network',
+    description: 'Active operations worldwide with established distribution networks, warehouses, and service teams across multiple continents.',
     metric: '15+ Countries',
   },
   {

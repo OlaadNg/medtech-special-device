@@ -64,7 +64,7 @@ export default function Industries() {
       <PageHero
         label="Industries We Serve"
         title="Specialised Solutions for Every Healthcare Sector"
-        subtitle="From national referral hospitals to remote primary care clinics — MedTech understands the unique demands of every healthcare environment."
+        subtitle="From national referral hospitals to specialist clinics worldwide — MedTech understands the unique demands of every healthcare environment internationally."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 

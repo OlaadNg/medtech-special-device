@@ -43,7 +43,7 @@ const partnerCategories = [
     title: 'Strategic African Partners',
     icon: Handshake,
     color: '#00A8E8',
-    description: 'In-country distribution and service partners enabling our pan-African reach.',
+    description: 'In-country distribution and service partners enabling our global reach.',
     partners: [
       { name: 'East Africa Medical Supplies', specialty: 'Kenya, Uganda, Tanzania', country: 'Kenya' },
       { name: 'West Africa Healthcare Group', specialty: 'Nigeria, Ghana, Ivory Coast', country: 'Nigeria' },
@@ -106,7 +106,7 @@ export default function Partners() {
       <section className="py-20" style={{ background: 'var(--midnight-navy)' }}>
         <div className="section-container text-center max-w-2xl mx-auto">
           <h2 className="font-heading font-black text-3xl text-white mb-4">Become a MedTech Partner</h2>
-          <p className="font-body text-white/60 mb-8">Join our network of African distribution and service partners. We provide full training, marketing support, and technical resources.</p>
+          <p className="font-body text-white/60 mb-8">Join our network of global distribution and service partners. We provide full training, marketing support, and technical resources.</p>
           <Link to="/contact" className="btn-primary">
             Apply for Partnership <ArrowRight size={16} />
           </Link>

@@ -45,7 +45,7 @@ export default function Africa() {
       <PageHero
         label="Africa Operations"
         title="Delivering Healthcare Innovation Across the African Continent"
-        subtitle="From Cape Town to Cairo — MedTech's pan-African distribution network, regional offices, and clinical engineering teams ensure world-class medical technology reaches every corner of Africa."
+        subtitle="From China to the US and South Africa — MedTech's global distribution network and warehouse teams ensure world-class medical technology reaches healthcare providers internationally."
         image="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=1920&q=80"
       />
 

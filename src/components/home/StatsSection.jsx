@@ -3,10 +3,10 @@ import { motion, useInView } from 'framer-motion';
 import { useCountUp } from '../../hooks/useCountUp';
 
 const stats = [
-  { value: 35, suffix: '+', label: 'Years of Excellence', description: 'Serving African healthcare since 1989' },
+  { value: 25, suffix: '+', label: 'Years of Excellence', description: 'Serving the surgical device community since 2000' },
   { value: 500, suffix: '+', label: 'Healthcare Facilities', description: 'Hospitals, clinics, and health centres' },
-  { value: 10000, suffix: '+', label: 'Products Installed', description: 'Across South Africa and Africa' },
-  { value: 15, suffix: '+', label: 'African Countries', description: 'Active distribution and service network' },
+  { value: 10000, suffix: '+', label: 'Products Installed', description: 'Shipped worldwide internationally' },
+  { value: 15, suffix: '+', label: 'Countries Served', description: 'Active distribution network worldwide' },
   { value: 100, suffix: '+', label: 'Global Partners', description: 'World-leading equipment manufacturers' },
   { value: 150, suffix: '+', label: 'Certified Engineers', description: 'Factory-trained clinical engineers' },
 ];

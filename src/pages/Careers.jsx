@@ -33,7 +33,7 @@ export default function Careers() {
       <PageHero
         label="Careers at MedTech"
         title="Shape the Future of African Healthcare"
-        subtitle="Join a team of 600+ passionate professionals dedicated to advancing healthcare technology across Africa. We invest in people who care about making a difference."
+        subtitle="Join a team of 600+ passionate professionals dedicated to advancing healthcare technology internationally. We invest in people who care about making a difference."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 
@@ -45,7 +45,7 @@ export default function Careers() {
               <span className="section-label mb-4">Life at MedTech</span>
               <h2 className="font-heading font-black text-3xl lg:text-4xl mt-4 mb-5" style={{ color: 'var(--midnight-navy)' }}>Where Expertise Meets Impact</h2>
               <p className="font-body text-lg leading-relaxed mb-8" style={{ color: 'var(--slate-text)' }}>
-                At MedTech, every team member contributes directly to the quality of healthcare across Africa. Whether you are a clinical engineer maintaining life-saving equipment or a sales specialist connecting hospitals with the technology they need — your work matters.
+                At MedTech, every team member contributes directly to the quality of healthcare worldwide. Whether you are a clinical engineer maintaining life-saving equipment or a sales specialist connecting hospitals with the technology they need — your work matters.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {benefits.map(b => {

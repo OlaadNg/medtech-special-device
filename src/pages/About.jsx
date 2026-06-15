@@ -5,14 +5,14 @@ import PageHero from '../components/shared/PageHero';
 
 const timeline = [
   { year: '2000', title: 'MedTech Founded', desc: 'Established as a wholesale liquidator of disposable surgical devices and sutures from top global brands.' },
-  { year: '1996', title: 'ISO 13485 Certification', desc: 'Achieved international quality management certification for medical device distribution.' },
-  { year: '2001', title: 'Government Contracts', desc: 'First major Department of Health tender for ICU equipment across 12 public hospitals.' },
-  { year: '2006', title: 'Pan-African Expansion', desc: 'Opened regional offices in Nairobi, Lagos, and Lusaka, serving 8 African countries.' },
-  { year: '2010', title: 'Clinical Engineering Division', desc: 'Launched dedicated clinical engineering with 50+ factory-trained technicians.' },
+  { year: '2001', title: 'ISO 13485 Certification', desc: 'Achieved international quality management certification for medical device distribution.' },
+  { year: '2003', title: 'International Expansion', desc: 'Opened distribution partnerships across multiple countries, serving clients worldwide.' },
+  { year: '2006', title: 'Global Warehouse Network', desc: 'Established warehouses in China, United States, and South Africa for same-day worldwide shipping.' },
+  { year: '2010', title: 'Premium Brand Launch', desc: 'Launched own premium brand of sutures, skin staplers, and exam gloves for lower-cost, higher-quality options.' },
   { year: '2015', title: 'Digital Health Division', desc: 'Established digital healthcare division focused on EMR, telemedicine, and health IT.' },
-  { year: '2020', title: 'COVID-19 Emergency Response', desc: 'Supplied 2,000+ ventilators and critical care equipment across South Africa during the pandemic.' },
-  { year: '2024', title: '15 Countries, 500+ Facilities', desc: 'Reached milestone of serving 500+ healthcare facilities across 15 African nations.' },
-  { year: '2026', title: 'AI Healthcare Technology', desc: 'Launched AI diagnostics and robotic surgery solutions across East and Southern Africa.' },
+  { year: '2020', title: 'COVID-19 Emergency Response', desc: 'Supplied 2,000+ ventilators and critical care equipment to healthcare facilities worldwide during the pandemic.' },
+  { year: '2023', title: '160,000+ Item Catalogue', desc: 'Reached milestone of 160,000+ items from 150+ manufacturers with same-day shipping capability.' },
+  { year: '2026', title: 'AI Healthcare Technology', desc: 'Launched AI diagnostics and robotic surgery solutions for healthcare providers internationally.' },
 ];
 
 const team = [
@@ -93,7 +93,7 @@ export default function About() {
       <PageHero
         label="About MedTech Special Device"
         title="Your Trusted Wholesale Surgical Device Partner Since 2000"
-        subtitle="A proud member of the surgical device community since 2000 — supplying brand-name surgical disposables at discounted prices, with no contracts and no minimum orders."
+        subtitle="A proud member of the surgical device community since 2000 — supplying brand-name surgical disposables at discounted prices worldwide, with no contracts and no minimum orders."
         image="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1920&q=90&auto=format&fit=crop"
       />
 
@@ -116,7 +116,7 @@ export default function About() {
                 When you call MedTech Special Device, you're not just speaking to an order taker — you are speaking to a Customer Service Representative who can help you find the products you use quickly and easily. No guesswork, no delays. We know your time is valuable.
               </p>
               <p className="font-body leading-relaxed mb-8" style={{ color: 'var(--slate-text)' }}>
-                We stock over <strong>160,000 items</strong> from over <strong>150 leading manufacturers</strong>. Orders placed by <strong>5:00 PM CST ship the same day</strong>. Overnight shipping is available.
+                We stock over <strong>160,000 items</strong> from over <strong>150 leading manufacturers</strong>. Orders placed by <strong>5:00 PM CST ship the same day</strong> worldwide. Overnight international shipping is available.
               </p>
 
               {/* Contact & Warehouses */}
@@ -158,7 +158,7 @@ export default function About() {
                   </div>
                   <div>
                     <p className="font-heading font-black text-xl" style={{ color: 'var(--midnight-navy)' }}>25+ Years</p>
-                    <p className="font-body text-sm" style={{ color: 'var(--slate-text)' }}>Industry Excellence</p>
+                    <p className="font-body text-sm" style={{ color: 'var(--slate-text)' }}>Global Excellence</p>
                   </div>
                 </div>
               </div>

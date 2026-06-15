@@ -63,7 +63,7 @@ const services = [
     ],
     image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80&auto=format&fit=crop',
     metric1: { value: '200+', label: 'Projects Delivered' },
-    metric2: { value: '35+', label: 'Years Experience' },
+    metric2: { value: '25+', label: 'Years Experience' },
   },
   {
     id: 'training',
