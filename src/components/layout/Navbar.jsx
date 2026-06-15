@@ -85,10 +85,7 @@ export default function Navbar() {
         <div className="section-container flex justify-between items-center py-2">
           <span className="font-body">Wholesale Surgical Device Liquidator — 160,000+ Items, Ships Same Day</span>
           <div className="flex items-center gap-6">
-            <a href="tel:+27112345678" className="flex items-center gap-1.5 hover:text-white transition-colors">
-              <Phone size={12} />
-              <span>+27 11 234 5678</span>
-            </a>
+            <span className="text-white/70">Contact us by email only</span>
             <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-1.5 hover:text-white transition-colors">
               <Mail size={12} />
               <span>info@medtechspecialdevice.com</span>

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 
 export default function HomeCTA() {
   const ref = useRef(null);
@@ -37,13 +37,9 @@ export default function HomeCTA() {
               Get Quotation <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-white/60 text-sm font-body">
-            <div className="flex items-center gap-2">
-              <Phone size={15} />
-              <span>Emergency Support: <a href="tel:+27800123456" className="text-white font-semibold hover:underline">0800 123 456</a></span>
-            </div>
-            <span className="hidden sm:block">•</span>
-            <span>Available 24 hours, 7 days a week</span>
+          <div className="mt-8 flex items-center justify-center gap-2 text-white/60 text-sm font-body">
+            <Mail size={15} />
+            <span>Contact us by email only: <a href="mailto:info@medtechspecialdevice.com" className="text-white font-semibold hover:underline">info@medtechspecialdevice.com</a></span>
           </div>
         </motion.div>
       </div>

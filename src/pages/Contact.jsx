@@ -1,39 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, AlertCircle } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import { Mail, MapPin, Send, CheckCircle2, AlertCircle } from 'lucide-react';
 import PageHero from '../components/shared/PageHero';
 
-const offices = [
-  {
-    city: 'Johannesburg (HQ)',
-    address: '123 Healthcare Drive, Sandton, Johannesburg, 2196',
-    phone: '+27 11 234 5678',
-    email: 'info@medtechspecialdevice.com',
-    hours: 'Mon–Fri: 08:00–17:00',
-    isHQ: true,
-  },
-  {
-    city: 'Cape Town',
-    address: '45 Medical Quarter, Century City, Cape Town, 7441',
-    phone: '+27 21 567 8901',
-    email: 'info@medtechspecialdevice.com',
-    hours: 'Mon–Fri: 08:00–17:00',
-  },
-  {
-    city: 'Durban',
-    address: '78 Health Hub, Umhlanga Ridge, Durban, 4320',
-    phone: '+27 31 456 7890',
-    email: 'info@medtechspecialdevice.com',
-    hours: 'Mon–Fri: 08:00–17:00',
-  },
-  {
-    city: 'Pretoria',
-    address: '22 MedPark Boulevard, Centurion, Pretoria, 0157',
-    phone: '+27 12 345 6789',
-    email: 'info@medtechspecialdevice.com',
-    hours: 'Mon–Fri: 08:00–17:00',
-  },
+const warehouses = [
+  { flag: '🇨🇳', name: 'China Warehouse', label: 'Asia-Pacific Distribution' },
+  { flag: '🇺🇸', name: 'US Warehouse', label: 'North America Distribution' },
+  { flag: '🇿🇦', name: 'South Africa Warehouse', label: 'Africa Distribution Hub' },
 ];
 
 export default function Contact() {
@@ -75,7 +48,7 @@ export default function Contact() {
             {/* Contact form */}
             <div className="lg:col-span-2">
               <h2 className="font-heading font-black text-3xl mb-2" style={{ color: 'var(--midnight-navy)' }}>Send Us a Message</h2>
-              <p className="font-body mb-8" style={{ color: 'var(--slate-text)' }}>We typically respond within 2 business hours. For urgent technical support, call our 24/7 helpdesk.</p>
+              <p className="font-body mb-8" style={{ color: 'var(--slate-text)' }}>We typically respond within 2 business hours. Contact us by email only.</p>
 
               {status === 'success' ? (
                 <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-col items-center justify-center py-20 rounded-3xl border text-center" style={{ borderColor: 'var(--light-border)' }}>
@@ -150,45 +123,28 @@ export default function Contact() {
             {/* Contact info sidebar */}
             <div className="space-y-5">
               <div className="p-6 rounded-2xl" style={{ background: 'var(--midnight-navy)' }}>
-                <h3 className="font-heading font-bold text-white mb-1 text-lg">24/7 Emergency Support</h3>
-                <p className="text-white/60 text-sm font-body mb-4">For critical equipment failures and emergencies</p>
-                <a href="tel:+27800123456" className="flex items-center gap-3 text-white font-heading font-bold text-xl hover:opacity-80 transition-opacity">
-                  <Phone size={22} style={{ color: 'var(--vital-green)' }} />
-                  0800 123 456
+                <h3 className="font-heading font-bold text-white mb-1 text-lg">Contact Us</h3>
+                <p className="text-white/60 text-sm font-body mb-4">Contact us by email only</p>
+                <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-3 text-white font-heading font-semibold text-base hover:opacity-80 transition-opacity break-all">
+                  <Mail size={20} style={{ color: 'var(--vital-green)', flexShrink: 0 }} />
+                  info@medtechspecialdevice.com
                 </a>
-                <p className="text-white/40 text-xs mt-2 font-body">Toll-free · Available 24 hours, 365 days</p>
               </div>
 
               <div className="p-6 rounded-2xl border" style={{ borderColor: 'var(--light-border)' }}>
-                <h3 className="font-heading font-bold mb-4" style={{ color: 'var(--midnight-navy)' }}>Quick Contact</h3>
+                <h3 className="font-heading font-bold mb-4" style={{ color: 'var(--midnight-navy)' }}>Our Warehouses</h3>
                 <div className="space-y-4">
-                  <a href="tel:+27112345678" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--clinical-mist)' }}>
-                      <Phone size={16} style={{ color: 'var(--medihub-blue)' }} />
+                  {warehouses.map(w => (
+                    <div key={w.name} className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-xl" style={{ background: 'var(--clinical-mist)' }}>
+                        {w.flag}
+                      </div>
+                      <div>
+                        <p className="font-heading font-semibold text-sm" style={{ color: 'var(--midnight-navy)' }}>{w.name}</p>
+                        <p className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>{w.label}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>Sales & Enquiries</p>
-                      <p className="font-heading font-semibold text-sm group-hover:text-medihub-blue transition-colors" style={{ color: 'var(--midnight-navy)' }}>+27 11 234 5678</p>
-                    </div>
-                  </a>
-                  <a href="mailto:info@medtechspecialdevice.com" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--clinical-mist)' }}>
-                      <Mail size={16} style={{ color: 'var(--medihub-blue)' }} />
-                    </div>
-                    <div>
-                      <p className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>Email Us</p>
-                      <p className="font-heading font-semibold text-sm group-hover:text-medihub-blue transition-colors" style={{ color: 'var(--midnight-navy)' }}>info@medtechspecialdevice.com</p>
-                    </div>
-                  </a>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--clinical-mist)' }}>
-                      <Clock size={16} style={{ color: 'var(--medihub-blue)' }} />
-                    </div>
-                    <div>
-                      <p className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>Office Hours</p>
-                      <p className="font-heading font-semibold text-sm" style={{ color: 'var(--midnight-navy)' }}>Mon–Fri: 08:00–17:00</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -196,23 +152,29 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Office locations */}
+      {/* Warehouse locations */}
       <section className="py-16" style={{ background: 'var(--clinical-mist)' }}>
         <div className="section-container">
-          <h2 className="font-heading font-black text-3xl mb-10 text-center" style={{ color: 'var(--midnight-navy)' }}>Our Offices</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {offices.map((office) => (
-              <div key={office.city} className="bg-white rounded-2xl p-5 border card-hover" style={{ borderColor: office.isHQ ? 'var(--medihub-blue)' : 'var(--light-border)', borderWidth: office.isHQ ? '2px' : '1px' }}>
-                {office.isHQ && <span className="text-xs font-mono font-semibold mb-3 block" style={{ color: 'var(--medihub-blue)', fontFamily: 'var(--font-mono)' }}>HQ — HEAD OFFICE</span>}
-                <h3 className="font-heading font-bold mb-4" style={{ color: 'var(--midnight-navy)' }}>{office.city}</h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex items-start gap-2.5"><MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--medihub-blue)' }} /><span className="font-body" style={{ color: 'var(--slate-text)' }}>{office.address}</span></div>
-                  <a href={`tel:${office.phone.replace(/\s/g,'')}`} className="flex items-center gap-2.5 hover:text-medihub-blue transition-colors"><Phone size={14} style={{ color: 'var(--medihub-blue)' }} /><span className="font-body">{office.phone}</span></a>
-                  <a href={`mailto:${office.email}`} className="flex items-center gap-2.5 hover:text-medihub-blue transition-colors"><Mail size={14} style={{ color: 'var(--medihub-blue)' }} /><span className="font-body">{office.email}</span></a>
-                  <div className="flex items-center gap-2.5"><Clock size={14} style={{ color: 'var(--medihub-blue)' }} /><span className="font-body">{office.hours}</span></div>
-                </div>
+          <h2 className="font-heading font-black text-3xl mb-10 text-center" style={{ color: 'var(--midnight-navy)' }}>Our Warehouses</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+            {warehouses.map((w) => (
+              <div key={w.name} className="bg-white rounded-2xl p-6 border card-hover text-center" style={{ borderColor: 'var(--light-border)' }}>
+                <div className="text-5xl mb-4">{w.flag}</div>
+                <h3 className="font-heading font-bold text-lg mb-1" style={{ color: 'var(--midnight-navy)' }}>{w.name}</h3>
+                <p className="font-body text-sm" style={{ color: 'var(--slate-text)' }}>{w.label}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-10 text-center">
+            <div className="inline-flex items-center gap-3 px-6 py-4 rounded-2xl" style={{ background: 'var(--midnight-navy)' }}>
+              <Mail size={18} style={{ color: 'var(--vital-green)' }} />
+              <div className="text-left">
+                <p className="text-white/60 text-xs font-body">Contact us by email only</p>
+                <a href="mailto:info@medtechspecialdevice.com" className="text-white font-heading font-semibold text-sm hover:opacity-80 transition-opacity">
+                  info@medtechspecialdevice.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
