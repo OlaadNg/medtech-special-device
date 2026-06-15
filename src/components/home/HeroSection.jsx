@@ -13,14 +13,14 @@ const heroSlides = [
   {
     image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1920&q=90&auto=format&fit=crop',
     label: 'Precision Theatre Equipment',
-    headline: 'Equipping Africa\'s Hospitals',
+    headline: 'Equipping Hospitals Worldwide',
     highlight: 'With World-Class Technology',
   },
   {
     image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1920&q=90&auto=format&fit=crop',
     label: 'Digital Health Innovation',
     headline: 'Transforming Patient Care',
-    highlight: 'Across the African Continent',
+    highlight: 'Internationally',
   },
 ];
 
@@ -105,7 +105,7 @@ export default function HeroSection() {
               className="text-white/75 font-body leading-relaxed mb-8 max-w-xl"
               style={{ fontSize: '1.1rem' }}
             >
-              We deliver world-class medical equipment, healthcare solutions, clinical engineering services, and digital healthcare technologies across South Africa and Africa.
+              We deliver world-class medical equipment, healthcare solutions, clinical engineering services, and digital healthcare technologies to providers worldwide.
             </motion.p>
 
             <motion.div

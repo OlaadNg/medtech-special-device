@@ -11,7 +11,7 @@ export default function TrustedBy() {
     <section className="py-10 border-b" style={{ background: 'var(--clinical-mist)', borderColor: 'var(--light-border)' }}>
       <div className="section-container">
         <p className="text-center text-xs font-heading uppercase tracking-widest mb-6" style={{ color: 'var(--slate-text)' }}>
-          Trusted by Africa's leading healthcare institutions
+          Trusted by the world's leading healthcare institutions
         </p>
         <div className="overflow-hidden relative">
           <div className="absolute left-0 top-0 bottom-0 w-16 z-10" style={{ background: 'linear-gradient(90deg, var(--clinical-mist), transparent)' }} />

@@ -7,8 +7,8 @@ const articles = [
   {
     id: 1,
     category: 'Medical Innovations',
-    title: 'AI-Powered Diagnostics Revolutionising Early Disease Detection in Sub-Saharan Africa',
-    excerpt: 'New deep learning algorithms are enabling rapid, accurate diagnostics in resource-constrained healthcare settings, improving outcomes for millions.',
+    title: 'AI-Powered Diagnostics Revolutionising Early Disease Detection Worldwide',
+    excerpt: 'New deep learning algorithms are enabling rapid, accurate diagnostics in resource-constrained healthcare settings globally, improving outcomes for millions.',
     image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80&auto=format&fit=crop',
     date: 'June 10, 2026',
     readTime: '5 min read',
@@ -16,8 +16,8 @@ const articles = [
   {
     id: 2,
     category: 'Industry Reports',
-    title: "South Africa's NHI Implementation: What It Means for Medical Equipment Procurement",
-    excerpt: 'Analysis of the National Health Insurance Act and its implications for private and public sector medical technology procurement.',
+    title: "Global Healthcare Reform: What It Means for Medical Equipment Procurement",
+    excerpt: 'Analysis of international healthcare policy trends and their implications for private and public sector medical technology procurement.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop',
     date: 'June 5, 2026',
     readTime: '8 min read',
@@ -25,8 +25,8 @@ const articles = [
   {
     id: 3,
     category: 'Company News',
-    title: 'MedTech Expands Operations Into East Africa With New Nairobi Regional Office',
-    excerpt: 'MedTech strengthens its pan-African footprint by establishing a full-service clinical engineering and distribution hub in Nairobi, Kenya.',
+    title: 'MedTech Expands Global Operations With New International Distribution Hub',
+    excerpt: 'MedTech strengthens its worldwide footprint by establishing a full-service clinical engineering and distribution hub to serve international markets.',
     image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80&auto=format&fit=crop',
     date: 'May 28, 2026',
     readTime: '3 min read',

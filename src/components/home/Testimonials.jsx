@@ -4,7 +4,7 @@ import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "MedTech transformed our ICU capabilities. Their end-to-end approach — from equipment selection through installation and ongoing support — is unmatched in South Africa. We've seen measurable improvements in patient outcomes.",
+    quote: "MedTech transformed our ICU capabilities. Their end-to-end approach — from equipment selection through installation and ongoing support — is unmatched globally. We've seen measurable improvements in patient outcomes.",
     name: 'Dr. Sarah Mokoena',
     title: 'Head of Critical Care, Charlotte Maxeke Hospital',
     institution: 'Charlotte Maxeke Academic Hospital, Johannesburg',
@@ -25,10 +25,10 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "MedTech's digital health division helped us implement a fully integrated EMR and telemedicine platform across our three Mozambique clinics. The local language support and training was outstanding.",
+    quote: "MedTech's digital health division helped us implement a fully integrated EMR and telemedicine platform across our three clinics. The support and training was outstanding.",
     name: 'Dr. Amina Hassan',
-    title: 'Medical Director, Africa Health Network',
-    institution: 'Africa Health Network, Mozambique',
+    title: 'Medical Director, Global Health Network',
+    institution: 'Global Health Network, International',
     rating: 5,
   },
 ];
@@ -52,7 +52,7 @@ export default function Testimonials() {
         >
           <span className="section-label mb-4">Testimonials</span>
           <h2 className="font-heading font-black text-4xl lg:text-5xl mt-4" style={{ color: 'var(--midnight-navy)' }}>
-            Trusted By Healthcare Leaders<br />Across Africa
+            Trusted By Healthcare Leaders<br />Worldwide
           </h2>
         </motion.div>
 
