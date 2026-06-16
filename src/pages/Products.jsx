@@ -3,39 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, Filter, Grid, List, SlidersHorizontal, ArrowRight, Zap, X } from 'lucide-react';
 import PageHero from '../components/shared/PageHero';
-
-const categories = [
-  'All Categories',
-  'Theatre Equipment',
-  'ICU Equipment',
-  'Emergency Equipment',
-  'Orthopaedic Devices',
-  'Diagnostic Equipment',
-  'Cardiology Equipment',
-  'Laboratory Equipment',
-  'Radiology Equipment',
-  'Digital Health Systems',
-  'CSSD Equipment',
-  'Oncology Equipment',
-  'General Ward Equipment',
-  'Maternal & Infant Care',
-  'Anaesthesia Systems',
-];
-
-const allProducts = [
-  { id: 1, name: 'IntelliVue MX750 Patient Monitor', sku: 'PHL-MX750', category: 'Diagnostic Equipment', manufacturer: 'Philips', image: 'https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?w=400&q=80', description: 'High-acuity patient monitoring with advanced waveform analysis and networked EMR integration.', isNew: false, isFeatured: true },
-  { id: 2, name: 'Maquet Magnus Operating Table', sku: 'MQT-MAGNUS-1150', category: 'Theatre Equipment', manufacturer: 'Getinge', image: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&q=80', description: 'Carbon-fibre operating table with full imaging compatibility and 360° surgeon ergonomics.', isNew: true, isFeatured: true },
-  { id: 3, name: 'BeneVision N22 ICU Monitor', sku: 'MDR-BN22-ICU', category: 'ICU Equipment', manufacturer: 'Mindray', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80', description: 'Comprehensive critical care monitor with 22" display and full haemodynamic monitoring.', isNew: false, isFeatured: true },
-  { id: 4, name: 'GE Logiq E10 Ultrasound', sku: 'GE-LOGIQ-E10', category: 'Radiology Equipment', manufacturer: 'GE Healthcare', image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80', description: 'Premium shared-service ultrasound with AI-assisted imaging and cSound architecture.', isNew: true, isFeatured: false },
-  { id: 5, name: 'Draeger Evita 800 Ventilator', sku: 'DRG-EVITA-800', category: 'ICU Equipment', manufacturer: 'Dräger', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80', description: 'High-end ICU ventilator with integrated lung mechanics and advanced closed-loop ventilation.', isNew: false, isFeatured: true },
-  { id: 6, name: 'Siemens ACUSON Sequoia', sku: 'SIE-ACU-SEQ', category: 'Radiology Equipment', manufacturer: 'Siemens Healthineers', image: 'https://images.unsplash.com/photo-1628348070889-cb656235b4eb?w=400&q=80', description: 'Revolutionary ultrasound with BioAcoustic Imaging for unprecedented image quality.', isNew: false, isFeatured: false },
-  { id: 7, name: 'Stryker 3202 LED Surgical Light', sku: 'STR-3202-LED', category: 'Theatre Equipment', manufacturer: 'Stryker', image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&q=80', description: 'High-output LED surgical ceiling light with integrated camera system and shadow-free illumination.', isNew: false, isFeatured: false },
-  { id: 8, name: 'Defibrillator LIFEPAK 20e', sku: 'STC-LP20E', category: 'Emergency Equipment', manufacturer: 'Stryker', image: 'https://images.unsplash.com/photo-1571772996211-2f02974562f3?w=400&q=80', description: 'Professional defibrillator/monitor with CPR feedback and protocol-driven therapy guidance.', isNew: false, isFeatured: false },
-  { id: 9, name: 'ICU Hospital Bed Eleganza 5', sku: 'HRD-ELEG5-ICU', category: 'ICU Equipment', manufacturer: 'Stiegelmeyer', image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80', description: 'Advanced ICU bed with integrated scales, auto-lateral tilt therapy, and nurse control panels.', isNew: true, isFeatured: false },
-  { id: 10, name: 'Biomet Vanguard Knee System', sku: 'ZIM-VNG-KNEE', category: 'Orthopaedic Devices', manufacturer: 'Zimmer Biomet', image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=400&q=80', description: 'Complete primary knee replacement system with MyKnee patient-specific cutting guides.', isNew: false, isFeatured: false },
-  { id: 11, name: 'Abbott Architect c8000', sku: 'ABT-ARCH-C8000', category: 'Laboratory Equipment', manufacturer: 'Abbott', image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&q=80', description: 'High-throughput clinical chemistry analyser for large-volume hospital laboratories.', isNew: false, isFeatured: false },
-  { id: 12, name: 'Siemens Healthineers ECG 12-Lead', sku: 'SIE-ECG-12L', category: 'Cardiology Equipment', manufacturer: 'Siemens Healthineers', image: 'https://images.unsplash.com/photo-1628348070889-cb656235b4eb?w=400&q=80', description: 'Resting ECG system with Aris AI interpretation and EMR connectivity for cardiology departments.', isNew: true, isFeatured: false },
-];
+import { allProducts, categories } from '../lib/productsData';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
