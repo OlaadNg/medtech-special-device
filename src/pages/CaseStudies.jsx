@@ -13,9 +13,9 @@ const caseStudies = [
     location: 'Johannesburg, South Africa',
     image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&q=80',
     challenge: 'Aging ICU equipment with frequent unplanned breakdowns was impacting patient care and consuming the biomedical engineering team with reactive maintenance.',
-    solution: 'MediHub implemented a Planned Preventive Maintenance programme with real-time fleet monitoring across 120 ICU devices, factory-trained engineer assignment, and strategic spare parts pre-positioning.',
+    solution: 'MedTech implemented a Planned Preventive Maintenance programme with real-time fleet monitoring across 120 ICU devices, factory-trained engineer assignment, and strategic spare parts pre-positioning.',
     metrics: [{ label: 'Equipment Downtime Reduction', value: '94%' }, { label: 'Mean Time to Repair', value: '1.2hr' }, { label: 'PPM Compliance Rate', value: '99%' }],
-    testimonial: 'MediHub transformed how we manage our critical care equipment. The proactive approach has measurably improved our equipment uptime and taken enormous pressure off our biomedical team.',
+    testimonial: 'MedTech transformed how we manage our critical care equipment. The proactive approach has measurably improved our equipment uptime and taken enormous pressure off our biomedical team.',
     testimonialAuthor: 'Dr. Sarah Mokoena, Head of Critical Care',
   },
   {
@@ -26,9 +26,9 @@ const caseStudies = [
     location: 'Nairobi, Kenya',
     image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=700&q=80',
     challenge: "Kenya's largest public hospital needed a complete upgrade of its 40-bed ICU to modern standards — on a government budget with strict procurement timelines.",
-    solution: 'MediHub supplied and installed a complete 40-bed ICU solution — Mindray BeneVision monitoring system, Dräger Evita ventilators, infusion systems, and ICU beds — within budget and on schedule, with full staff training.',
+    solution: 'MedTech supplied and installed a complete 40-bed ICU solution — Mindray BeneVision monitoring system, Dräger Evita ventilators, infusion systems, and ICU beds — within budget and on schedule, with full staff training.',
     metrics: [{ label: 'ICU Beds Equipped', value: '40' }, { label: 'Project Duration', value: '4 months' }, { label: 'Budget Adherence', value: '100%' }],
-    testimonial: "MediHub delivered a world-class ICU on an African public healthcare budget. Their project management, technical expertise, and training support were exceptional.",
+    testimonial: "MedTech delivered a world-class ICU solution. Their project management, technical expertise, and training support were exceptional.",
     testimonialAuthor: 'Prof. James Ngugi, Medical Director',
   },
   {
@@ -41,7 +41,7 @@ const caseStudies = [
     challenge: 'A leading private hospital group needed to implement a unified EMR and digital imaging system across 15 hospitals while maintaining operational continuity.',
     solution: 'Phased implementation of Cerner Millennium EMR, integrated PACS across all radiology departments, and telemedicine infrastructure — with full staff training and 24/7 IT support.',
     metrics: [{ label: 'Hospitals Connected', value: '15' }, { label: 'Staff Trained', value: '3,200+' }, { label: 'Go-Live Success', value: '100%' }],
-    testimonial: 'The MediHub digital health team is the best in Africa. Their clinical expertise combined with technical capability delivered a seamless digitisation programme.',
+    testimonial: 'The MedTech digital health team is outstanding. Their clinical expertise combined with technical capability delivered a seamless digitisation programme.',
     testimonialAuthor: 'Ms. Priya Nair, Group CIO, Life Healthcare',
   },
 ];
@@ -54,8 +54,8 @@ export default function CaseStudies() {
     <div>
       <PageHero
         label="Case Studies"
-        title="Real-World Healthcare Transformations Across Africa"
-        subtitle="Explore how MediHub has partnered with hospitals, clinics, and government institutions to deliver measurable improvements in clinical outcomes and operational efficiency."
+        title="Real-World Healthcare Transformations Worldwide"
+        subtitle="Explore how MedTech has partnered with hospitals, clinics, and government institutions to deliver measurable improvements in clinical outcomes and operational efficiency."
         image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80"
       />
 
@@ -123,7 +123,7 @@ export default function CaseStudies() {
       <section className="py-16" style={{ background: 'var(--clinical-mist)' }}>
         <div className="section-container text-center max-w-2xl mx-auto">
           <h2 className="font-heading font-black text-3xl mb-4" style={{ color: 'var(--midnight-navy)' }}>Ready to Write Your Success Story?</h2>
-          <p className="font-body text-lg mb-8" style={{ color: 'var(--slate-text)' }}>Let's discuss how MediHub can help transform your healthcare facility with the right technology, delivered right.</p>
+          <p className="font-body text-lg mb-8" style={{ color: 'var(--slate-text)' }}>Let's discuss how MedTech can help transform your healthcare facility with the right technology, delivered right.</p>
           <Link to="/contact" className="btn-primary">Talk to Our Team <ArrowRight size={16} /></Link>
         </div>
       </section>

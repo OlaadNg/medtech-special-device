@@ -13,7 +13,7 @@ const events = [
     location: 'Gallagher Convention Centre, Johannesburg',
     isVirtual: false,
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80',
-    description: "South Africa's premier healthcare exhibition — 500+ exhibitors, 15,000+ healthcare professionals, and MediHub showcasing our complete product range with live demos.",
+    description: "A premier international healthcare exhibition — 500+ exhibitors, 15,000+ healthcare professionals, and MedTech showcasing our complete product range with live demos.",
     isFeatured: true,
     attendees: '15,000+',
     status: 'upcoming',
@@ -26,7 +26,7 @@ const events = [
     location: 'Online',
     isVirtual: true,
     image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&q=80',
-    description: 'Explore how artificial intelligence is transforming diagnostics in African hospitals with MediHub clinical experts and global manufacturer specialists.',
+    description: 'Explore how artificial intelligence is transforming diagnostics in hospitals worldwide with MedTech clinical experts and global manufacturer specialists.',
     isFeatured: false,
     attendees: '500+',
     status: 'upcoming',
@@ -36,7 +36,7 @@ const events = [
     title: 'ICU Equipment Maintenance Workshop',
     type: 'Workshop',
     date: 'July 22–23, 2026',
-    location: 'MediHub Training Centre, Cape Town',
+    location: 'MedTech Training Centre, Cape Town',
     isVirtual: false,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80',
     description: 'Hands-on training for biomedical engineers covering ICU ventilator maintenance, patient monitor calibration, and compliance testing.',
@@ -46,13 +46,13 @@ const events = [
   },
   {
     id: 4,
-    title: 'MediHub Healthcare Leadership Summit 2026',
+    title: 'MedTech Healthcare Leadership Summit 2026',
     type: 'Conference',
     date: 'October 5–6, 2026',
     location: 'Cape Town International Convention Centre',
     isVirtual: false,
     image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=700&q=80',
-    description: 'Annual gathering of African healthcare leaders, technology innovators, and policy makers focused on transforming African healthcare infrastructure.',
+    description: 'Annual gathering of global healthcare leaders, technology innovators, and policy makers focused on transforming healthcare infrastructure worldwide.',
     isFeatured: true,
     attendees: '800+',
     status: 'upcoming',
@@ -75,8 +75,8 @@ export default function Events() {
     <div>
       <PageHero
         label="Events"
-        title="Healthcare Technology Events Across Africa"
-        subtitle="Join MediHub at leading healthcare conferences, exhibitions, workshops, and webinars — connect with our team and discover the latest medical technology innovations."
+        title="Healthcare Technology Events Worldwide"
+        subtitle="Join MedTech at leading healthcare conferences, exhibitions, workshops, and webinars — connect with our team and discover the latest medical technology innovations."
         image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
       />
 
@@ -129,7 +129,7 @@ export default function Events() {
                       <span>{event.attendees} expected attendees</span>
                     </div>
                   </div>
-                  <a href="mailto:events@medihub.co.za" className="btn-primary text-sm" style={{ background: typeColors[event.type], minHeight: '44px', padding: '0 20px', fontSize: '13px' }}>
+                  <a href="mailto:info@medtechspecialdevice.com" className="btn-primary text-sm" style={{ background: typeColors[event.type], minHeight: '44px', padding: '0 20px', fontSize: '13px' }}>
                     Register Now <ArrowRight size={14} />
                   </a>
                 </div>

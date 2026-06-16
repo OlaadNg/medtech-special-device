@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MessageCircle, X, Phone } from 'lucide-react';
+import { MessageCircle, X, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsAppButton() {
@@ -17,35 +17,25 @@ export default function WhatsAppButton() {
             style={{ borderColor: 'var(--light-border)' }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: '#25D366' }}>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: 'var(--medihub-blue)' }}>
                 <MessageCircle size={20} className="text-white" />
               </div>
               <div>
-                <p className="font-heading font-semibold text-sm" style={{ color: 'var(--midnight-navy)' }}>MediHub Support</p>
-                <p className="text-xs text-green-600 flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-green-500 inline-block"></span> Online now</p>
+                <p className="font-heading font-semibold text-sm" style={{ color: 'var(--midnight-navy)' }}>MedTech Support</p>
+                <p className="text-xs flex items-center gap-1" style={{ color: 'var(--surgical-teal)' }}>
+                  <span className="w-2 h-2 rounded-full inline-block" style={{ background: 'var(--surgical-teal)' }}></span> Email us anytime
+                </p>
               </div>
             </div>
-            <p className="text-sm text-slate-600 mb-4 font-body">Hello! 👋 How can we help you today? Chat with our healthcare solutions team.</p>
-            <div className="space-y-2">
-              <a
-                href="https://wa.me/27112345678?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20medical%20equipment%20solutions."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 w-full py-3 px-4 rounded-xl text-white text-sm font-semibold transition-all duration-200 hover:opacity-90"
-                style={{ background: '#25D366' }}
-              >
-                <MessageCircle size={16} />
-                Chat on WhatsApp
-              </a>
-              <a
-                href="tel:+27112345678"
-                className="flex items-center gap-2 w-full py-3 px-4 rounded-xl text-sm font-semibold border transition-all duration-200 hover:bg-slate-50"
-                style={{ color: 'var(--medihub-blue)', borderColor: 'var(--medihub-blue)' }}
-              >
-                <Phone size={16} />
-                Call Us: +27 11 234 5678
-              </a>
-            </div>
+            <p className="text-sm text-slate-600 mb-4 font-body">Hello! 👋 How can we help you today? Send us an email and our healthcare solutions team will get back to you promptly.</p>
+            <a
+              href="mailto:info@medtechspecialdevice.com"
+              className="flex items-center gap-2 w-full py-3 px-4 rounded-xl text-white text-sm font-semibold transition-all duration-200 hover:opacity-90"
+              style={{ background: 'var(--medihub-blue)' }}
+            >
+              <Mail size={16} />
+              info@medtechspecialdevice.com
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -55,8 +45,8 @@ export default function WhatsAppButton() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg transition-all duration-300"
-        style={{ background: open ? 'var(--medihub-blue)' : '#25D366', boxShadow: '0 4px 20px rgba(0,0,0,0.25)' }}
-        aria-label={open ? 'Close chat' : 'Open WhatsApp chat'}
+        style={{ background: 'var(--medihub-blue)', boxShadow: '0 4px 20px rgba(0,91,170,0.4)' }}
+        aria-label={open ? 'Close chat' : 'Contact MedTech Support'}
       >
         <AnimatePresence mode="wait">
           {open ? (
