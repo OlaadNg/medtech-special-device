@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Outlet, Link, useLocation, Navigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/lib/AuthContext';
+import { base44 } from '@/api/base44Client';
 import {
   LayoutDashboard, Package, FileText, Calendar, Users, MessageSquare,
   Download, Briefcase, Settings, LogOut, Menu, X, ChevronRight,
@@ -32,9 +33,10 @@ export default function AdminLayout() {
     );
   }
 
-  // Redirect if not logged in or not admin
+  // Redirect if not logged in
   if (!user) {
-    return <Navigate to="/login" replace />;
+    base44.auth.redirectToLogin(window.location.href);
+    return null;
   }
   if (user.role !== 'admin') {
     return (
@@ -111,7 +113,7 @@ export default function AdminLayout() {
               View Site
             </Link>
             <button
-              onClick={() => { import('@/api/base44Client').then(m => m.base44.auth.logout('/')); }}
+              onClick={() => base44.auth.logout('/')}
               className="flex-1 flex items-center justify-center gap-1.5 text-xs text-slate-400 hover:text-red-400 py-2 rounded-lg hover:bg-slate-800 transition-colors"
             >
               <LogOut size={13} /> Logout
