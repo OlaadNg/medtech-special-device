@@ -34,6 +34,12 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import CookiePolicy from './pages/CookiePolicy';
 import PoPIACompliance from './pages/PoPIACompliance';
 
+// Admin
+import AdminLayout from './pages/admin/AdminLayout';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminProducts from './pages/admin/AdminProducts';
+import AdminGenericList from './pages/admin/AdminGenericList';
+
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
 
@@ -88,6 +94,20 @@ const AuthenticatedApp = () => {
         <Route path="/popia-compliance" element={<PoPIACompliance />} />
       </Route>
       <Route path="/client-portal" element={<ClientPortal />} />
+
+      {/* Admin Panel */}
+      <Route path="/admin" element={<AdminLayout />}>
+        <Route index element={<AdminDashboard />} />
+        <Route path="products" element={<AdminProducts />} />
+        <Route path="news" element={<AdminGenericList entityName="NewsArticle" title="News Articles" displayField="title" secondaryField="category" badgeField="status" />} />
+        <Route path="events" element={<AdminGenericList entityName="Event" title="Events" displayField="title" secondaryField="event_type" badgeField="status" />} />
+        <Route path="case-studies" element={<AdminGenericList entityName="CaseStudy" title="Case Studies" displayField="title" secondaryField="client_name" badgeField="status" />} />
+        <Route path="quotes" element={<AdminGenericList entityName="QuoteRequest" title="Quote Requests" displayField="first_name" secondaryField="organization" badgeField="status" />} />
+        <Route path="service-requests" element={<AdminGenericList entityName="ServiceRequest" title="Service Requests" displayField="equipment_name" secondaryField="request_type" badgeField="status" />} />
+        <Route path="downloads" element={<AdminGenericList entityName="Download" title="Downloads" displayField="title" secondaryField="category" badgeField="category" />} />
+        <Route path="jobs" element={<AdminGenericList entityName="JobListing" title="Job Listings" displayField="title" secondaryField="department" badgeField="status" />} />
+      </Route>
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
