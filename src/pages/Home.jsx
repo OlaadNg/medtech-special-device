@@ -8,6 +8,7 @@ import {
   Thermometer, BarChart3, Building2, Syringe
 } from 'lucide-react';
 import HeroSection from '../components/home/HeroSection';
+import TrustedBy from '../components/home/TrustedBy';
 import CareDivisions from '../components/home/CareDivisions';
 import StatsSection from '../components/home/StatsSection';
 import WhyChooseUs from '../components/home/WhyChooseUs';
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <HeroSection />
+      <TrustedBy />
       <CareDivisions />
       <FeaturedProducts />
       <StatsSection />
