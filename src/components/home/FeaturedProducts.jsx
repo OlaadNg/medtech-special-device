@@ -87,9 +87,9 @@ export default function FeaturedProducts() {
             </h2>
           </motion.div>
           <motion.div initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}} transition={{ delay: 0.3, duration: 0.6 }}>
-            <a href="https://www.synergysurgical.com/search/index.php.html" target="_blank" rel="noopener noreferrer" className="btn-outline">
+            <Link to="/products" className="btn-outline">
               View Full Catalogue <ArrowRight size={16} />
-            </a>
+            </Link>
           </motion.div>
         </div>
 
