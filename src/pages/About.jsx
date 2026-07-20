@@ -4,7 +4,7 @@ import { CheckCircle2, Award, Globe, Users, Target, Eye, Heart } from 'lucide-re
 import PageHero from '../components/shared/PageHero';
 
 const timeline = [
-  { year: '2000', title: 'MedTech Founded', desc: 'Established as a wholesale liquidator of disposable surgical devices and sutures from top global brands.' },
+  { year: '2013', title: 'MedTech Founded', desc: 'Established as a wholesale liquidator of disposable surgical devices and sutures from top global brands.' },
   { year: '2001', title: 'ISO 13485 Certification', desc: 'Achieved international quality management certification for medical device distribution.' },
   { year: '2003', title: 'International Expansion', desc: 'Opened distribution partnerships across multiple countries, serving clients worldwide.' },
   { year: '2006', title: 'Global Warehouse Network', desc: 'Established warehouses in China, United States, and South Africa for same-day worldwide shipping.' },
@@ -93,7 +93,7 @@ export default function About() {
       <PageHero
         label="About MedTech Special Device"
         title="Your Trusted Wholesale Surgical Device Partner Since 2000"
-        subtitle="A proud member of the surgical device community since 2000 — supplying brand-name surgical disposables at discounted prices worldwide, with no contracts and no minimum orders."
+        subtitle="A proud member of the surgical device community since 2013 — supplying brand-name surgical disposables at discounted prices worldwide, with no contracts and no minimum orders."
         image="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1920&q=90&auto=format&fit=crop"
       />
 
@@ -107,7 +107,7 @@ export default function About() {
                 Who We Are
               </h2>
               <p className="font-body text-lg leading-relaxed mb-5" style={{ color: 'var(--slate-text)' }}>
-                MedTech Special Device is a wholesale liquidator of disposable surgical devices and sutures from top brands such as <strong>Arthrex, Bard, Medtronic, Stryker</strong>, and many more. A proud member of the surgical device community since 2000, we specialise in selling brand-name surgical devices at discounted prices — in quantities you decide. <strong>No contracts, no minimum orders.</strong>
+                MedTech Special Device is a wholesale liquidator of disposable surgical devices and sutures from top brands such as <strong>Arthrex, Bard, Medtronic, Stryker</strong>, and many more. A proud member of the surgical device community since 2013, we specialise in selling brand-name surgical devices at discounted prices — in quantities you decide. <strong>No contracts, no minimum orders.</strong>
               </p>
               <p className="font-body leading-relaxed mb-5" style={{ color: 'var(--slate-text)' }}>
                 In order to better serve the medical community, in 2023, MedTech Special Device launched our own premium brand of sutures, skin staplers, and exam gloves. This enables us to provide lower-cost &amp; higher-quality surgical disposables while maintaining the speed and efficiency you've come to expect.
@@ -157,7 +157,7 @@ export default function About() {
                     <Award size={22} className="text-white" />
                   </div>
                   <div>
-                    <p className="font-heading font-black text-xl" style={{ color: 'var(--midnight-navy)' }}>25+ Years</p>
+                    <p className="font-heading font-black text-xl" style={{ color: 'var(--midnight-navy)' }}>13 Years</p>
                     <p className="font-body text-sm" style={{ color: 'var(--slate-text)' }}>Global Excellence</p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export default function About() {
         <div className="section-container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={timelineInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-14">
             <span className="section-label mb-4">Company Timeline</span>
-            <h2 className="font-heading font-black text-4xl mt-4" style={{ color: 'var(--midnight-navy)' }}>25 Years of Milestones</h2>
+            <h2 className="font-heading font-black text-4xl mt-4" style={{ color: 'var(--midnight-navy)' }}>13 Years of Milestones</h2>
           </motion.div>
           <div className="relative max-w-3xl mx-auto">
             <div className="absolute left-8 top-0 bottom-0 w-px" style={{ background: 'linear-gradient(180deg, var(--medihub-blue), var(--surgical-teal))' }} />

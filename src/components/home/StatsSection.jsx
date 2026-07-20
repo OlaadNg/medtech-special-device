@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { useCountUp } from '../../hooks/useCountUp';
 
 const stats = [
-  { value: 25, suffix: '+', label: 'Years of Excellence', description: 'Serving the surgical device community since 2000' },
+  { value: 13, suffix: '+', label: 'Years of Excellence', description: 'Serving the surgical device community since 2013' },
   { value: 500, suffix: '+', label: 'Healthcare Facilities', description: 'Hospitals, clinics, and health centres' },
   { value: 10000, suffix: '+', label: 'Products Installed', description: 'Shipped worldwide internationally' },
   { value: 15, suffix: '+', label: 'Countries Served', description: 'Active distribution network worldwide' },

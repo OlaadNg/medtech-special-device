@@ -13,17 +13,17 @@ export default function PrivacyPolicy() {
       <PageHero
         label="Legal"
         title="Privacy Policy"
-        subtitle="How MediHub collects, uses, and protects your personal information."
+        subtitle="How MedTech Special Device collects, uses, and protects your personal information."
       />
       <section className="py-16 bg-white">
         <div className="section-container max-w-4xl">
           <p className="text-sm font-body mb-10 pb-6 border-b" style={{ color: 'var(--slate-text)', borderColor: 'var(--light-border)' }}>
-            <strong>Last Updated: 1 June 2026</strong> &nbsp;|&nbsp; MediHub Healthcare Solutions (Pty) Ltd, Reg. No. 1989/012345/07
+            <strong>Last Updated: 1 June 2026</strong> &nbsp;|&nbsp; MedTech Special Device (Pty) Ltd, Reg. No. 1989/012345/07
           </p>
 
           <Section title="1. Introduction">
-            <p>MediHub Healthcare Solutions (Pty) Ltd ("MediHub", "we", "our", or "us") is committed to protecting your privacy and ensuring the responsible processing of your personal information in accordance with the Protection of Personal Information Act, 4 of 2013 ("POPIA"), and all applicable South African data protection legislation.</p>
-            <p>This Privacy Policy applies to all personal information collected via our website (www.medihub.co.za), our Client Portal, quote request forms, event registrations, and any other interaction with MediHub. By using our services, you acknowledge that you have read and understood this policy.</p>
+            <p>MedTech Special Device (Pty) Ltd ("MedTech Special Device", "we", "our", or "us") is committed to protecting your privacy and ensuring the responsible processing of your personal information in accordance with the Protection of Personal Information Act, 4 of 2013 ("POPIA"), and all applicable South African data protection legislation.</p>
+            <p>This Privacy Policy applies to all personal information collected via our website (www.medtechspecialdevice.com), our Client Portal, quote request forms, event registrations, and any other interaction with MedTech Special Device. By using our services, you acknowledge that you have read and understood this policy.</p>
           </Section>
 
           <Section title="2. Information We Collect">
@@ -34,8 +34,8 @@ export default function PrivacyPolicy() {
               <li><strong>Organisational Data:</strong> Employer / institution name, organisation type, province and country.</li>
               <li><strong>Transaction Data:</strong> Details of products and services you have enquired about or procured.</li>
               <li><strong>Technical Data:</strong> IP address, browser type, device identifiers, cookies and usage data from our website.</li>
-              <li><strong>Communication Data:</strong> Records of correspondence with MediHub, including emails, support tickets, and enquiry forms.</li>
-              <li><strong>Marketing Preferences:</strong> Your preferences for receiving marketing and communications from MediHub.</li>
+              <li><strong>Communication Data:</strong> Records of correspondence with MedTech Special Device, including emails, support tickets, and enquiry forms.</li>
+              <li><strong>Marketing Preferences:</strong> Your preferences for receiving marketing and communications from MedTech Special Device.</li>
             </ul>
           </Section>
 
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
           </Section>
 
           <Section title="5. Sharing of Personal Information">
-            <p>MediHub does not sell, rent, or trade your personal information. We may share your information with:</p>
+            <p>MedTech Special Device does not sell, rent, or trade your personal information. We may share your information with:</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Service Providers:</strong> Trusted third-party IT, logistics, and support service providers who process data on our behalf and are bound by data processing agreements.</li>
               <li><strong>Manufacturer Partners:</strong> Where necessary to fulfil your equipment order, warranty claim, or technical support request.</li>
@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
           </Section>
 
           <Section title="6. International Data Transfers">
-            <p>Where personal information is transferred outside South Africa (e.g., to international manufacturer partners), MediHub ensures that adequate safeguards are in place, including contractual protections equivalent to those required under POPIA, as required by Section 72 of POPIA.</p>
+            <p>Where personal information is transferred outside South Africa (e.g., to international manufacturer partners), MedTech Special Device ensures that adequate safeguards are in place, including contractual protections equivalent to those required under POPIA, as required by Section 72 of POPIA.</p>
           </Section>
 
           <Section title="7. Data Retention">
@@ -90,25 +90,25 @@ export default function PrivacyPolicy() {
           <Section title="8. Your Rights Under POPIA">
             <p>As a data subject, you have the following rights:</p>
             <ul className="list-disc ml-6 space-y-2">
-              <li><strong>Right to Access:</strong> Request confirmation of whether MediHub holds your personal information and obtain a copy.</li>
+              <li><strong>Right to Access:</strong> Request confirmation of whether MedTech Special Device holds your personal information and obtain a copy.</li>
               <li><strong>Right to Correction:</strong> Request correction of inaccurate or outdated personal information.</li>
               <li><strong>Right to Deletion:</strong> Request erasure of your personal information where no lawful ground for retention exists.</li>
               <li><strong>Right to Object:</strong> Object to processing based on legitimate interest, including direct marketing.</li>
               <li><strong>Right to Withdraw Consent:</strong> Where processing is based on consent, you may withdraw consent at any time without affecting the lawfulness of prior processing.</li>
               <li><strong>Right to Complain:</strong> Lodge a complaint with the Information Regulator of South Africa at www.inforegulator.org.za.</li>
             </ul>
-            <p>To exercise any of these rights, contact our Information Officer at <a href="mailto:privacy@medihub.co.za" className="underline" style={{ color: 'var(--medihub-blue)' }}>privacy@medihub.co.za</a>.</p>
+            <p>To exercise any of these rights, contact our Information Officer at <a href="mailto:privacy@medtechspecialdevice.com" className="underline" style={{ color: 'var(--medihub-blue)' }}>privacy@medtechspecialdevice.com</a>.</p>
           </Section>
 
           <Section title="9. Security of Your Information">
-            <p>MediHub implements appropriate technical and organisational security measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. These measures include SSL/TLS encryption, access controls, regular security audits, and staff data protection training.</p>
-            <p>In the event of a data breach that poses a risk to your rights, MediHub will notify the Information Regulator and affected data subjects as required by POPIA within 72 hours of becoming aware of the breach.</p>
+            <p>MedTech Special Device implements appropriate technical and organisational security measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. These measures include SSL/TLS encryption, access controls, regular security audits, and staff data protection training.</p>
+            <p>In the event of a data breach that poses a risk to your rights, MedTech Special Device will notify the Information Regulator and affected data subjects as required by POPIA within 72 hours of becoming aware of the breach.</p>
           </Section>
 
           <Section title="10. Information Officer">
-            <p>MediHub's designated Information Officer, as required by POPIA, is responsible for overseeing data protection compliance.</p>
+            <p>MedTech Special Device's designated Information Officer, as required by POPIA, is responsible for overseeing data protection compliance.</p>
             <p><strong>Information Officer:</strong> [Name on request]<br />
-            <strong>Email:</strong> <a href="mailto:privacy@medihub.co.za" style={{ color: 'var(--medihub-blue)' }}>privacy@medihub.co.za</a><br />
+            <strong>Email:</strong> <a href="mailto:privacy@medtechspecialdevice.com" style={{ color: 'var(--medihub-blue)' }}>privacy@medtechspecialdevice.com</a><br />
             <strong>Postal Address:</strong> 123 Healthcare Drive, Sandton, Johannesburg, 2196</p>
           </Section>
 

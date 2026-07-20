@@ -131,7 +131,7 @@ export default function HeroSection() {
               className="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/15"
             >
               {[
-                { value: '25+', label: 'Years Experience' },
+                { value: '13+', label: 'Years Experience' },
                 { value: '500+', label: 'Facilities Served' },
                 { value: '15+', label: 'Countries Worldwide' },
                 { value: '24/7', label: 'Technical Support' },

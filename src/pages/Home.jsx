@@ -13,7 +13,6 @@ import CareDivisions from '../components/home/CareDivisions';
 import StatsSection from '../components/home/StatsSection';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import FeaturedProducts from '../components/home/FeaturedProducts';
-import Testimonials from '../components/home/Testimonials';
 import NewsPreview from '../components/home/NewsPreview';
 import HomeCTA from '../components/home/HomeCTA';
 
@@ -26,7 +25,6 @@ export default function Home() {
       <FeaturedProducts />
       <StatsSection />
       <WhyChooseUs />
-      <Testimonials />
       <NewsPreview />
       <HomeCTA />
     </div>
