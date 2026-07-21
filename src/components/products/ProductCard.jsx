@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Zap } from 'lucide-react';
+import { Zap, Check } from 'lucide-react';
 
-export default function ProductCard({ product, index, view }) {
+export default function ProductCard({ product, index, view, isComparing, onToggleCompare }) {
   const image = product.thumbnail || product.images?.[0] || 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80';
 
   return (
@@ -14,6 +14,19 @@ export default function ProductCard({ product, index, view }) {
       style={{ borderColor: 'var(--light-border)' }}
     >
       <div className={`relative overflow-hidden ${view === 'list' ? 'w-48 flex-shrink-0' : 'h-44'}`} style={{ background: 'var(--clinical-mist)' }}>
+        {onToggleCompare && (
+          <button
+            onClick={() => onToggleCompare(product)}
+            className="absolute top-3 right-3 z-10 flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-heading font-semibold transition-colors"
+            style={{
+              background: isComparing ? 'var(--medihub-blue)' : 'rgba(255,255,255,0.9)',
+              color: isComparing ? 'white' : 'var(--midnight-navy)',
+            }}
+          >
+            {isComparing && <Check size={12} />}
+            Compare
+          </button>
+        )}
         {product.is_new && (
           <div className="absolute top-3 left-3 z-10">
             <span className="text-xs font-heading font-semibold px-2.5 py-1 rounded-full text-white" style={{ background: 'var(--surgical-teal)' }}>New</span>
