@@ -34,7 +34,7 @@ export default function ProductCard({ product, index, view }) {
         <h3 className="font-heading font-bold mb-2 leading-snug" style={{ color: 'var(--midnight-navy)', fontSize: '14px' }}>{product.name}</h3>
         <p className="font-body text-xs leading-relaxed mb-4" style={{ color: 'var(--slate-text)', fontSize: '13px' }}>{product.short_description}</p>
         <div className="flex items-center justify-between">
-          <span className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>by <span className="font-semibold">{product.manufacturer || 'N/A'}</span></span>
+          <span className="text-xs font-body" style={{ color: 'var(--slate-text)' }}>by <span className="font-semibold">{product.manufacturer || product.name?.split(' ')[0]}</span></span>
           <Link to="/quote" className="flex items-center gap-1 text-xs font-heading font-semibold" style={{ color: 'var(--medihub-blue)' }}>
             <Zap size={11} /> Quote
           </Link>

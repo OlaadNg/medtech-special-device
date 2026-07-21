@@ -89,7 +89,7 @@ export default function ProductDetail() {
               <h1 className="font-heading font-black text-3xl lg:text-4xl mb-2" style={{ color: 'var(--midnight-navy)', letterSpacing: '-0.02em' }}>{product.name}</h1>
               {product.sku && <p className="font-mono text-sm mb-2" style={{ color: 'var(--slate-text)', fontFamily: 'var(--font-mono)' }}>SKU: {product.sku}</p>}
               <p className="font-body text-sm mb-6 flex items-center gap-1.5" style={{ color: 'var(--slate-text)' }}>
-                <Globe size={13} /> by <strong>{product.manufacturer || 'N/A'}</strong>{product.country_of_origin ? ` · ${product.country_of_origin}` : ''}
+                <Globe size={13} /> by <strong>{product.manufacturer || product.name?.split(' ')[0]}</strong>{product.country_of_origin ? ` · ${product.country_of_origin}` : ''}
               </p>
 
               <p className="font-body text-base leading-relaxed mb-8" style={{ color: 'var(--slate-text)' }}>{product.full_description || product.short_description}</p>
