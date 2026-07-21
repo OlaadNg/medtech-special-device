@@ -72,17 +72,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: 'var(--medihub-blue)' }}>
-                <svg viewBox="0 0 32 32" fill="none" className="w-6 h-6">
-                  <path d="M16 4v24M4 16h24" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
-                  <circle cx="16" cy="16" r="6" stroke="white" strokeWidth="2" fill="none" opacity="0.6"/>
-                </svg>
-              </div>
-              <div>
-                <span className="font-heading font-black text-xl text-white">MedTech</span>
-                <div className="text-white/40 font-body" style={{ fontSize: '10px', letterSpacing: '0.12em' }}>SPECIAL DEVICE</div>
-              </div>
+            <Link to="/" className="inline-block bg-white rounded-lg px-3 py-2 mb-6">
+              <img
+                src="https://media.base44.com/images/public/6a2dc1968bf71040c439ca75/b30f0019a_MedTechLogoACCEPTED.png"
+                alt="MedTech Special Device"
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-white/60 font-body text-sm leading-relaxed mb-6">
               Wholesale liquidator of disposable surgical devices and sutures from top brands. Serving the surgical device community since 2000 — no contracts, no minimum orders.

@@ -59,15 +59,14 @@ export default function AdminLayout() {
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 border-r border-slate-800 flex flex-col transition-transform duration-300 lg:relative lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         {/* Logo */}
         <div className="flex items-center gap-3 px-5 py-5 border-b border-slate-800">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'var(--medihub-blue)' }}>
-            <svg viewBox="0 0 32 32" fill="none" className="w-5 h-5">
-              <path d="M16 4v24M4 16h24" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
-            </svg>
+          <div className="bg-white rounded-lg px-2 py-1.5 flex-shrink-0">
+            <img
+              src="https://media.base44.com/images/public/6a2dc1968bf71040c439ca75/b30f0019a_MedTechLogoACCEPTED.png"
+              alt="MedTech Special Device"
+              className="h-7 w-auto"
+            />
           </div>
-          <div>
-            <p className="text-white font-bold text-sm leading-none">MedTech</p>
-            <p className="text-slate-400 text-xs mt-0.5">Admin Panel</p>
-          </div>
+          <p className="text-slate-400 text-xs">Admin Panel</p>
           <button onClick={() => setSidebarOpen(false)} className="ml-auto lg:hidden text-slate-400 hover:text-white">
             <X size={18} />
           </button>

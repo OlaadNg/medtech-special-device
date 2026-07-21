@@ -47,11 +47,11 @@ const AuthenticatedApp = () => {
     return (
       <div className="fixed inset-0 flex items-center justify-center" style={{ background: 'var(--clinical-mist)' }}>
         <div className="flex flex-col items-center gap-4">
-          <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: 'var(--medihub-blue)' }}>
-            <svg viewBox="0 0 32 32" fill="none" className="w-6 h-6">
-              <path d="M16 4v24M4 16h24" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
-            </svg>
-          </div>
+          <img
+            src="https://media.base44.com/images/public/6a2dc1968bf71040c439ca75/b30f0019a_MedTechLogoACCEPTED.png"
+            alt="MedTech Special Device"
+            className="h-10 w-auto"
+          />
           <div className="w-8 h-8 border-4 border-slate-200 rounded-full animate-spin" style={{ borderTopColor: 'var(--medihub-blue)' }}></div>
         </div>
       </div>

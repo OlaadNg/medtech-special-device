@@ -98,23 +98,13 @@ export default function Navbar() {
       <nav className={`sticky top-0 z-50 transition-all duration-400 ${isTransparent ? 'nav-ghost' : 'nav-solid'}`}>
         <div className="section-container flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center" style={{ background: 'var(--medihub-blue)' }}>
-                <svg viewBox="0 0 32 32" fill="none" className="w-5 h-5">
-                  <path d="M16 4v24M4 16h24" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
-                  <circle cx="16" cy="16" r="6" stroke="white" strokeWidth="2" fill="none" opacity="0.6"/>
-                </svg>
-              </div>
-              <div>
-                <span className={`font-heading font-black text-xl tracking-tight ${isTransparent ? 'text-white' : 'text-midnight-navy'}`}
-                  style={{ color: isTransparent ? 'white' : 'var(--midnight-navy)' }}>
-                  MedTech
-                </span>
-                <div className={`text-xs font-body leading-none ${isTransparent ? 'text-white/60' : 'text-slate-400'}`} style={{ fontSize: '10px', letterSpacing: '0.12em' }}>
-                  SPECIAL DEVICE
-                </div>
-              </div>
+          <Link to="/" className="flex items-center flex-shrink-0">
+            <div className={`rounded-lg px-2.5 py-1.5 transition-colors ${isTransparent ? 'bg-white' : ''}`}>
+              <img
+                src="https://media.base44.com/images/public/6a2dc1968bf71040c439ca75/b30f0019a_MedTechLogoACCEPTED.png"
+                alt="MedTech Special Device"
+                className="h-9 w-auto"
+              />
             </div>
           </Link>
 
