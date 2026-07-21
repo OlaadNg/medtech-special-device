@@ -4,7 +4,6 @@ import { base44 } from '@/api/base44Client';
 import PageHero from '../components/shared/PageHero';
 import ProductFilters from '../components/products/ProductFilters';
 import ProductCard from '../components/products/ProductCard';
-import CompareBar from '../components/products/CompareBar';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -14,16 +13,6 @@ export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'All Categories');
   const [selectedManufacturer, setSelectedManufacturer] = useState('All Manufacturers');
   const [view, setView] = useState('grid');
-  const [compareItems, setCompareItems] = useState([]);
-
-  const toggleCompare = (product) => {
-    setCompareItems(prev => {
-      const exists = prev.some(p => p.id === product.id);
-      if (exists) return prev.filter(p => p.id !== product.id);
-      if (prev.length >= 4) return prev;
-      return [...prev, product];
-    });
-  };
 
   useEffect(() => {
     base44.entities.Product.filter({ status: 'active' }, '-created_date', 500).then(data => {
@@ -98,25 +87,12 @@ export default function Products() {
           ) : (
             <div className={`grid gap-5 ${view === 'grid' ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`}>
               {filtered.map((product, i) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  index={i}
-                  view={view}
-                  isComparing={compareItems.some(p => p.id === product.id)}
-                  onToggleCompare={toggleCompare}
-                />
+                <ProductCard key={product.id} product={product} index={i} view={view} />
               ))}
             </div>
           )}
         </div>
       </section>
-
-      <CompareBar
-        items={compareItems}
-        onRemove={(id) => setCompareItems(prev => prev.filter(p => p.id !== id))}
-        onClear={() => setCompareItems([])}
-      />
     </div>
   );
 }
