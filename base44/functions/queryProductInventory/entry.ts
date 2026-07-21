@@ -19,7 +19,8 @@ Deno.serve(async (req) => {
     if (!projects.length) {
       return Response.json({ error: 'No Supabase projects found for this account' }, { status: 404 });
     }
-    const projectRef = projects[0].ref;
+    const activeProject = projects.find((p) => p.status === 'ACTIVE_HEALTHY') || projects[0];
+    const projectRef = activeProject.ref || activeProject.id;
 
     // 2. Inspect schema (list tables + columns) via SQL introspection
     const schemaQuery = `
