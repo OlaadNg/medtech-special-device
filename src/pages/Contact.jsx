@@ -10,7 +10,7 @@ const warehouses = [
 ];
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', organization: '', subject: '', message: '' });
+  const [form, setForm] = useState({ name: '', email: '', organization: '', subject: '', message: '' });
   const [status, setStatus] = useState('idle');
   const [errors, setErrors] = useState({});
 
@@ -65,7 +65,6 @@ export default function Contact() {
                     {[
                       { key: 'name', label: 'Full Name', type: 'text', placeholder: 'Dr. Jane Smith' },
                       { key: 'email', label: 'Email Address', type: 'email', placeholder: 'jane@hospital.co.za' },
-                      { key: 'phone', label: 'Phone Number', type: 'tel', placeholder: '+27 11 000 0000' },
                       { key: 'organization', label: 'Organisation', type: 'text', placeholder: 'Hospital / Clinic Name' },
                     ].map(field => (
                       <div key={field.key}>

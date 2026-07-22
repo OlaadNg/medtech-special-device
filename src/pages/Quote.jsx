@@ -20,7 +20,7 @@ export default function Quote() {
   const [errors, setErrors] = useState({});
 
   const [form, setForm] = useState({
-    first_name: '', last_name: '', email: '', phone: '',
+    first_name: '', last_name: '', email: '',
     organization: '', job_title: '', organization_type: '',
     product_categories: [], products_interested: '',
     project_description: '', budget_range: '', province: '',
@@ -125,14 +125,10 @@ export default function Quote() {
                       </div>
                     ))}
                   </div>
-                  <div className="grid grid-cols-2 gap-5">
-                    {[{ k: 'email', label: 'Email Address', type: 'email', placeholder: 'john@hospital.co.za' }, { k: 'phone', label: 'Phone Number', type: 'tel', placeholder: '+27 11 000 0000' }].map(field => (
-                      <div key={field.k}>
-                        <label className="block text-sm font-heading font-semibold mb-1.5" style={{ color: 'var(--midnight-navy)' }}>{field.label} {field.k === 'email' && <span style={{ color: '#E53E3E' }}>*</span>}</label>
-                        <input type={field.type} placeholder={field.placeholder} value={form[field.k]} onChange={e => f(field.k, e.target.value)} className="w-full px-4 py-3 rounded-xl border font-body text-sm focus:outline-none focus:border-medihub-blue transition-colors" style={{ borderColor: errors[field.k] ? '#E53E3E' : 'var(--light-border)', minHeight: '48px' }} />
-                        {errors[field.k] && <p className="text-xs mt-1 text-red-500">{errors[field.k]}</p>}
-                      </div>
-                    ))}
+                  <div>
+                    <label className="block text-sm font-heading font-semibold mb-1.5" style={{ color: 'var(--midnight-navy)' }}>Email Address <span style={{ color: '#E53E3E' }}>*</span></label>
+                    <input type="email" placeholder="john@hospital.co.za" value={form.email} onChange={e => f('email', e.target.value)} className="w-full px-4 py-3 rounded-xl border font-body text-sm focus:outline-none focus:border-medihub-blue transition-colors" style={{ borderColor: errors.email ? '#E53E3E' : 'var(--light-border)', minHeight: '48px' }} />
+                    {errors.email && <p className="text-xs mt-1 text-red-500">{errors.email}</p>}
                   </div>
                   <div>
                     <label className="block text-sm font-heading font-semibold mb-1.5" style={{ color: 'var(--midnight-navy)' }}>Organisation <span style={{ color: '#E53E3E' }}>*</span></label>
