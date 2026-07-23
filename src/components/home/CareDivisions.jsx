@@ -7,10 +7,10 @@ const divisions = [
   {
     id: 'surgical',
     title: 'Surgical Disposables',
-    description: 'Sterile gloves, gowns, masks, drapes, sutures, scalpel blades, and instruments for every surgical procedure.',
+    description: 'Sterile gloves, gowns, masks, drapes, sutures, catheter kits, wound dressings, peptides, and instruments for every surgical procedure.',
     image: 'https://media.base44.com/images/public/6a2dc1968bf71040c439ca75/6db4fe34e_generated_image.png',
     color: '#005BAA',
-    count: '10 Products',
+    count: '22 Products',
     category: 'Surgical Instruments & Disposables',
   },
   {
