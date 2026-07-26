@@ -129,20 +129,20 @@ export default function AdminLayout() {
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top bar */}
-        <header className="bg-slate-900 border-b border-slate-800 px-5 py-4 flex items-center gap-4">
-          <button onClick={() => setSidebarOpen(true)} className="lg:hidden text-slate-400 hover:text-white">
+        <header className="bg-slate-900 border-b border-slate-800 px-4 sm:px-5 py-4 flex items-center gap-3 sm:gap-4">
+          <button onClick={() => setSidebarOpen(true)} className="lg:hidden text-slate-400 hover:text-white flex-shrink-0">
             <Menu size={20} />
           </button>
-          <div className="flex-1">
-            <h1 className="text-white font-semibold text-sm">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-white font-semibold text-sm truncate">
               {navItems.find(n => n.path === location.pathname)?.label || 'Admin Panel'}
             </h1>
           </div>
-          <span className="text-xs bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium">Admin</span>
+          <span className="text-xs bg-blue-600/20 text-blue-400 px-2.5 sm:px-3 py-1 rounded-full font-medium flex-shrink-0">Admin</span>
         </header>
 
         {/* Page content */}
-        <main className="flex-1 overflow-y-auto bg-slate-950 p-6">
+        <main className="flex-1 overflow-y-auto bg-slate-950 p-4 sm:p-6">
           <Outlet />
         </main>
       </div>

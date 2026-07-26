@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Plus, Pencil, Trash2, Search, X } from 'lucide-react';
 import AdminEntityModal from './AdminEntityModal';
+import { entitySchemas } from '@/lib/entitySchemas';
 
 export default function AdminProducts() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [editing, setEditing] = useState(null); // null=closed, {}=new, item=edit
-  const [schema, setSchema] = useState(null);
+  const schema = entitySchemas.Product;
 
   const load = async () => {
     const data = await base44.entities.Product.list('-created_date', 200);
@@ -18,7 +19,6 @@ export default function AdminProducts() {
 
   useEffect(() => {
     load();
-    base44.entities.Product.schema().then(setSchema);
   }, []);
 
   const handleDelete = async (id) => {
@@ -43,9 +43,9 @@ export default function AdminProducts() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
         <h2 className="text-white font-bold text-xl">Products <span className="text-slate-500 text-base font-normal ml-1">({items.length})</span></h2>
-        <button onClick={() => setEditing({})} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors">
+        <button onClick={() => setEditing({})} className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition-colors w-full sm:w-auto">
           <Plus size={15} /> Add Product
         </button>
       </div>
@@ -63,25 +63,25 @@ export default function AdminProducts() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-slate-700 text-slate-400 text-xs uppercase tracking-wide">
-                  <th className="text-left px-5 py-3">Name</th>
-                  <th className="text-left px-5 py-3 hidden md:table-cell">Category</th>
-                  <th className="text-left px-5 py-3 hidden lg:table-cell">SKU</th>
-                  <th className="text-left px-5 py-3 hidden lg:table-cell">Status</th>
-                  <th className="px-5 py-3 w-20"></th>
+                  <th className="text-left px-3 sm:px-5 py-3">Name</th>
+                  <th className="text-left px-3 sm:px-5 py-3 hidden md:table-cell">Category</th>
+                  <th className="text-left px-3 sm:px-5 py-3 hidden lg:table-cell">SKU</th>
+                  <th className="text-left px-3 sm:px-5 py-3 hidden lg:table-cell">Status</th>
+                  <th className="px-3 sm:px-5 py-3 w-16 sm:w-20"></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-700/50">
                 {filtered.map(p => (
                   <tr key={p.id} className="hover:bg-slate-700/30 transition-colors">
-                    <td className="px-5 py-3 text-white font-medium">{p.name}</td>
-                    <td className="px-5 py-3 text-slate-400 hidden md:table-cell">{p.category}</td>
-                    <td className="px-5 py-3 text-slate-500 font-mono text-xs hidden lg:table-cell">{p.sku}</td>
-                    <td className="px-5 py-3 hidden lg:table-cell">
+                    <td className="px-3 sm:px-5 py-3 text-white font-medium max-w-[140px] sm:max-w-none truncate">{p.name}</td>
+                    <td className="px-3 sm:px-5 py-3 text-slate-400 hidden md:table-cell">{p.category}</td>
+                    <td className="px-3 sm:px-5 py-3 text-slate-500 font-mono text-xs hidden lg:table-cell">{p.sku}</td>
+                    <td className="px-3 sm:px-5 py-3 hidden lg:table-cell">
                       <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${p.status === 'active' ? 'bg-green-500/20 text-green-400' : 'bg-slate-600/40 text-slate-400'}`}>
                         {p.status || 'active'}
                       </span>
                     </td>
-                    <td className="px-5 py-3">
+                    <td className="px-3 sm:px-5 py-3">
                       <div className="flex items-center gap-2 justify-end">
                         <button onClick={() => setEditing(p)} className="text-slate-400 hover:text-blue-400 transition-colors"><Pencil size={14} /></button>
                         <button onClick={() => handleDelete(p.id)} className="text-slate-400 hover:text-red-400 transition-colors"><Trash2 size={14} /></button>
@@ -89,7 +89,7 @@ export default function AdminProducts() {
                     </td>
                   </tr>
                 ))}
-                {filtered.length === 0 && <tr><td colSpan={5} className="px-5 py-8 text-center text-slate-500">No products found.</td></tr>}
+                {filtered.length === 0 && <tr><td colSpan={5} className="px-3 sm:px-5 py-8 text-center text-slate-500">No products found.</td></tr>}
               </tbody>
             </table>
           </div>
