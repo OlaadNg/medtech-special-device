@@ -38,6 +38,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import CookiePolicy from './pages/CookiePolicy';
 import PoPIACompliance from './pages/PoPIACompliance';
+import Webmail from './pages/Webmail';
 
 // Admin
 import AdminLayout from './pages/admin/AdminLayout';
@@ -101,6 +102,7 @@ const AuthenticatedApp = () => {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/popia-compliance" element={<PoPIACompliance />} />
+        <Route path="/webmail" element={<Webmail />} />
       </Route>
       <Route path="/client-portal" element={<ClientPortal />} />
 
